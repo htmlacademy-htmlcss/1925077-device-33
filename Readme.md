@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Валерий Аллеев](https://up.htmlacademy.ru/htmlcss/33/user/1925077).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
