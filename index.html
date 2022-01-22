@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <h1 class="hidden">device</h1>
+    <a href="index.html" class="logo">
+      <img src="#" alt="Логотип с текстом Девайс">
+    </a>
+
+    <div class="left-header-wrapper">
+      <form action="#">
+        <div class="search-tandem">
+          <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on">
+          <button class="login-button" type="button">Найти</button>
+        </div>
+        <div class="acc-tandem">
+          <button class="login-button" type="button">Войти</button>
+          <button class="logout-button" type="button">Выйти</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="right-header-wrapper">
+      <ul>
+        <li class="compare a-button"><a href="#">Сравнить</a></li>
+        <li class="shopcart a-button"><a href="#">Корзина</a></li>
+      </ul>
+    </div>
+
+    <div class="select-catalog">
+      <form action="#">
+        <label>КАТАЛОГ ТОВАРОВ
+          <select name="catalog-produts" id="catalog-produts-id">
+            <option value="vr"><a href="#">Виртуальная реальность</a></option>
+            <option value="selfi"><a href="#">Моноподы для селфи</a></option>
+            <option value="action-cameras"><a href="#">Экшн-камеры</a></option>
+            <option value="fitness-watches"><a href="#">Фитнесс-браслеты</a></option>
+            <option value="smart-watches"><a href="#">Умные часы</a></option>
+            <option value="quadrocopters"><a href="#">Квадрокоптеры</a></option>
+          </select>
+        </label>
+      </form>
+    </div>
+
+    <nav class="header-navigation">
+      <ul class="navigation-list">
+        <li><a class="navigation-link" href="#">ДОСТАВКА</a></li>
+        <li><a class="navigation-link" href="#">ГАРАНТИЯ</a></li>
+        <li><a class="navigation-link" href="#">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+</body>
+
 </html>
