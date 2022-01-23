@@ -12,11 +12,12 @@
       <img src="#" alt="Перейти на сайт хтмл-Академии" class="page-logo">
     </a>
 
-    <form action="https://echo.htmlacademy.ru/" class="search-tandem" method="post">
-      <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
-      <a href="#" class="search-link">Найти</a>
-      <!-- <button class="search-button" type="button">Найти</button> -->
-    </form>
+    <!-- <form action="https://echo.htmlacademy.ru/" class="search-tandem" method="post">
+    </form> -->
+
+    <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
+    <a href="#" class="search-link">Найти</a>
+    <!-- <button class="search-button" type="button">Найти</button> -->
 
     <a href="#" class="login-link">Войти</a>
     <a href="#" class="visually-hidden logout-link">Выйти</a>
@@ -202,7 +203,7 @@
       <p class="about-and-contacts-p">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </p>
-      <a class="about-and-contacts-p" href="+78128121212">+7 (812) 812-12-12</a>
+      <a class="about-and-contacts-p" href="tel:+78128121212"><ins>+7 (812) 812-12-12</ins></a>
       <h3 class="about-and-contacts-h3">Время работы</h3>
       <p class="about-and-contacts-p">
         пн—пт: с <time>10:00</time> до <time>22:00</time><br>
@@ -213,8 +214,19 @@
       </address>
     </section>
 
-
-
+    <section class="subscribe">
+      <h2 class="subscribe-h2">Подпишитесь<br> на рассылку</h2>
+      <p class="subscribe-p">
+        Еженедельный дайджест с обзорами новинок,<br>
+        длительными тест-драйвами, распаковками, а также акции,<br>
+        спецпредложения и вот это вот всё.
+      </p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <input type="email" name="sub-email" id="sub-email-id" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться</button>
+      </form>
+      <p class="this-free">Это бесплатно</p>
+    </section>
   </main>
 
 </body>
