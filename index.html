@@ -8,7 +8,6 @@
 
 <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <a href="https://htmlacademy.ru/">
       <img src="#" alt="Перейти на сайт хтмл-Академии" class="page-logo">
     </a>
@@ -44,7 +43,78 @@
     </nav>
   </header>
 
+  <main class="main-index">
+    <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
+    <!-- Карусель товаров начало -->
+    <section class="carousel-section">
+      <h2 class="visually-hidden">Несколько рекомендованных товаров</h2>
+      <img class="slider-image" src="#" alt="Рекомендованные товары">
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+
+      <!-- Спискок радиоподобных кнопок -->
+      <ol class="slider-pagination">
+        <li class="slider-pagination-item">
+          <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
+          <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.</p>
+          <a href="#" class="detailed-link">Подробнее</a>
+          <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <span class="visually-hidden">Квадрокоптер</span>
+          </button>
+          <dl class="slider-properties">
+            <dt class="slider-meaning">Дальность полета</dt>
+            <dd class="slider-property">800 м</dd>
+
+            <dt class="slider-meaning">Радиус поражения</dt>
+            <dd class="slider-property">50 м</dd>
+          </dl>
+        </li>
+
+        <!-- Описание и свойста текущего товара -->
+        <li class="slider-pagination-item">
+          <p class="slider-slogan">Худеем<br>правильно!</p>
+          <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+            соблюдать диету.</p>
+          <a href="#" class="detailed-link">Подробнее</a>
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">Фитнес-браслет</span>
+          </button>
+          <dl class="slider-properties">
+            <dt class="slider-meaning">Без подзарядки</dt>
+            <dd class="slider-property">48 часов</dd>
+          </dl>
+        </li>
+
+        <li class="slider-pagination-item">
+          <p class="slider-slogan">Делай селфи,<br>как Бен Стиллер! </p>
+          <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+            метров длиной и весом всего 5 кг.</p>
+          <a href="#" class="detailed-link">Подробнее</a>
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">Палка для селфи</span>
+          </button>
+          <dl class="slider-properties">
+            <dt class="slider-meaning">Длина палки</dt>
+            <dd class="slider-property">8,5 м</dd>
+
+            <dt class="slider-meaning">Вес палки</dt>
+            <dd class="slider-property">5 кг</dd>
+
+            <dt class="slider-meaning">Материал</dt>
+            <dd class="slider-property">Карбон</dd>
+          </dl>
+        </li>
+      </ol>
+    </section>
+    <!-- Карусель товаров конец -->
+
+  </main>
 
 </body>
 
