@@ -73,7 +73,7 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-legend">Стоимость</legend>
-
+          <!-- double range -->
         </fieldset>
 
         <fieldset class="catalog-filter-group">
@@ -112,21 +112,35 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control-label">
-                <input type="radio" name="radio-bluetooth" class="color-checkbox" checked>Есть
+                <input type="radio" name="radio-bluetooth" class="color-checkbox" checked value="yes">Есть
               </label>
             </li>
           </ul>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control-label">
-                <input type="radio" name="radio-bluetooth" class="color-checkbox">Нет
+                <input type="radio" name="radio-bluetooth" class="color-checkbox" value="no">Нет
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <button class="button" type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
+
       </form>
+
+      <label class="sorting-label">Сортировка
+        <select class="sorting-select">
+          <option value="popular">Популярные</option>
+        </select>
+      </label>
+
+      <a href="#" class="list-or-table button-shop-list">
+        <span class="visually-hidden">Показать товары как список</span>
+      </a>
+      <a class="list-or-table button-shop-table" href="#">
+        <span class="visually-hidden">Показать товары как таблицу карточек</span>
+      </a>
 
     </section>
 
