@@ -121,7 +121,7 @@ address {
   line-height: 30px;
 }
 
-.detailed-link {
+.button-yellow-line {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -174,21 +174,6 @@ address {
 
 .catalog-navigation-link-6::before {
   content: url("../images/index-page/categories/categorie\ \(6\).svg");
-}
-
-.term-tab {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  border: none;
-  vertical-align: middle;
-  width: 140px;
-  height: 40px;
 }
 
 .term-header {
@@ -313,3 +298,113 @@ address {
   text-transform: uppercase;
 }
 
+.catalog-main-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.catalog-breadcrumbs-item {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-main-section {
+  background: #f0f0f0;
+}
+
+.filter-sorting-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.catalog-filter-item {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sorting-select {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.up-down-sorting {
+  border: none;
+}
+
+.up-down-sorting::after {
+  content: url("../images/catalog-page/up-triangle.svg");
+  width: 11px;
+  height: 10px;
+  opacity: 0.2;
+}
+
+.down-sorting {
+  transform: scale(1, -1);
+}
+
+.product-list-section {
+  background: #ffffff;
+}
+
+.product-title {
+  line-height: 20px;
+}
+
+.product-price {
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+
+.pagination-show-more {
+  width: 760px;
+  height: 55px;
+  border: 3px solid #e5e5e5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.pagination-list {
+  background: #ebebeb;
+}
+
+.pagination-prev,
+.pagination-next {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 16px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
+}
