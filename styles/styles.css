@@ -292,31 +292,24 @@ address {
   width: 14px;
   height: 14px;
 }
+
 .footer-page {
+  background: #444444;
+  color: #ffffff;
 }
+
 .footer-address {
+  font-size: 16px;
+  line-height: 19px;
 }
-.footer-direction {
-}
-.footer-phone {
-}
-.footer-navigation {
-}
-.footer-navigation-list {
-}
-.footer-navigation-item {
-}
+
 .footer-navigation-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
-.social-networks-section {
-}
-.visually-hidden {
-}
-.social-networks-list {
-}
-.social-networks-item {
-}
-.social-networks-link {
-}
-.footer-logo-html {
-}
+
