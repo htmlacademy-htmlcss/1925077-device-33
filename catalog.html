@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     <a href="#" class="shop-cart-link">Корзина</a>
 
     <!-- Раскрывающийся список каталога начало -->
-    <a class="product-catalog-label" href="#">Каталог товаров</a>
+    <a class="product-catalog-select" href="#">Каталог товаров</a>
     <!-- Раскрывающийся список каталога конец -->
 
     <nav class="header-navigation">
@@ -67,7 +68,7 @@
 
     <section class="catalog-main-section">
 
-      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <h2 class="filter-sorting-header">Фильтр:</h2>
 
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -125,114 +126,122 @@
           </ul>
         </fieldset>
 
-        <button class="filter-button" type="submit">Показать</button>
+        <button class="button-yellow-line" type="submit">Показать</button>
 
       </form>
 
-      <label class="sorting-label">Сортировка
+      <label class="filter-sorting-header">Сортировка
         <select class="sorting-select">
           <option value="popular">Популярные</option>
         </select>
       </label>
 
-      <a href="#" class="list-or-table button-shop-list">
-        <span class="visually-hidden">Показать товары как список</span>
-      </a>
-      <a class="list-or-table button-shop-table" href="#">
-        <span class="visually-hidden">Показать товары как таблицу карточек</span>
-      </a>
+      <button class="up-down-sorting" type="button" aria-label="По возрастанию">
+      </button>
+
+      <button class="up-down-sorting down-sorting" type="button" aria-label="По убыванию">
+      </button>
 
       <!-- Карточки товаров Начало -->
-      <ul class="product-list">
-        <li class="product-item">
-          <a href="#" class="product-link">
-            <img src="images/catalog-page/products/product (1).jpg" width="360" height="380" alt="" class="product-img">
-            <h3 class="product-title">
-              Любительская<br>
-              селфи-палка
-            </h3>
-          </a>
-          <span class="product-price">500
-            <span> &#8381;</span>
-          </span>
-          <a href="#" class="product-details visually-hidden">Подробнее</a>
-        </li>
+      <section class="product-list-section">
+        <ul class="product-list">
+          <li class="product-item">
+            <a href="#" class="product-link">
+              <img src="images/catalog-page/products/product(1).jpg" width="360" height="380"
+                alt="Нужен ли альт при заголовке ниже?" class="product-img">
+              <h3 class="product-title">
+                Любительская<br>
+                селфи-палка
+              </h3>
+            </a>
+            <span class="product-price">500
+              <span> &#8381;</span>
+            </span>
+            <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
+          </li>
 
-        <li class="product-item">
-          <a href="#" class="product-link">
+          <li class="product-item">
+            <a href="#" class="product-link">
 
-            <img src="images/catalog-page/products/product (2).jpg" width="360" height="380" alt="" class="product-img">
-            <h3 class="product-title">
-              Профессиональная<br>
-              селфи-палка
-            </h3>
-          </a>
-          <span class="product-price">1500
-            <span> &#8381;</span>
-          </span>
-          <a href="#" class="product-details visually-hidden">Подробнее</a>
-        </li>
+              <img src="images/catalog-page/products/product(2).jpg" width="360" height="380"
+                alt="Нужен ли альт при заголовке ниже?" class="product-img">
+              <h3 class="product-title">
+                Профессиональная<br>
+                селфи-палка
+              </h3>
+            </a>
+            <span class="product-price">1500
+              <span> &#8381;</span>
+            </span>
+            <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
+          </li>
 
-        <li class="product-item">
-          <a href="#" class="product-link">
+          <li class="product-item">
+            <a href="#" class="product-link">
 
-            <img src="images/catalog-page/products/product (3).jpg" width="360" height="380" alt="" class="product-img">
-            <h3 class="product-title">
-              Непотопляемая<br>
-              селфи-палка
-            </h3>
-          </a>
-          <span class="product-price">2500
-            <span> &#8381;</span>
-          </span>
-          <a href="#" class="product-details visually-hidden">Подробнее</a>
-        </li>
+              <img src="images/catalog-page/products/product(3).jpg" width="360" height="380"
+                alt="Нужен ли альт при заголовке ниже?" class="product-img">
+              <h3 class="product-title">
+                Непотопляемая<br>
+                селфи-палка
+              </h3>
+            </a>
+            <span class="product-price">2500
+              <span> &#8381;</span>
+            </span>
+            <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
+          </li>
 
-        <li class="product-item">
-          <a href="#" class="product-link">
+          <li class="product-item">
+            <a href="#" class="product-link">
 
-            <img src="images/catalog-page/products/product (4).jpg" width="360" height="380" alt="" class="product-img">
-            <h3 class="product-title">
-              Селфи-палка «Следуй за<br>
-              мной»
-            </h3>
-          </a>
-          <span class="product-price">1500
-            <span> &#8381;</span>
-          </span>
-          <a href="#" class="product-details visually-hidden">Подробнее</a>
-        </li>
-      </ul>
-      <!-- Карточки товаров Конец -->
+              <img src="images/catalog-page/products/product(4).jpg" width="360" height="380"
+                alt="Нужен ли альт при заголовке ниже?" class="product-img">
+              <h3 class="product-title">
+                Селфи-палка «Следуй за<br>
+                мной»
+              </h3>
+            </a>
+            <span class="product-price">1500
+              <span> &#8381;</span>
+            </span>
+            <a href="#" class="button-yellow-line visually-hidden">Подробнее</a>
+          </li>
+        </ul>
+        <!-- Карточки товаров Конец -->
 
-      <button class="pagination-show-more" type="button">Загрузить ещё</button>
-      <ul class="pagination-list">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-prev" href="#">
-            Назад
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">15</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            Вперед
-          </a>
-        </li>
-      </ul>
+        <button class="pagination-show-more" type="button">
+          Загрузить ещё
+        </button>
+
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-prev pagination-prev-next" href="#">
+              Назад
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">15</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-next  pagination-prev-next" href="#">
+              Вперед
+            </a>
+          </li>
+        </ul>
+      </section>
     </section>
 
 
@@ -241,7 +250,7 @@
   <footer class="footer-page">
 
     <a href="index.html">
-      <img src="images/footer/footer-logo.svg" width="144.9" height="36" alt="Перейти на главную страницу.">
+      <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Перейти на главную страницу.">
     </a>
 
     <address class="footer-address">
