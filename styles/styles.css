@@ -83,11 +83,14 @@ body {
 .button-yellow-line,
 .product-catalog-select,
 .super-order,
-.pagination-prev-next,
+.pagination-prev-next {
+  color: inherit;
+  text-decoration: none;
+}
+
 .phone-number,
 .footer-phone {
   color: inherit;
-  text-decoration: none;
 }
 
 .footer-address,
