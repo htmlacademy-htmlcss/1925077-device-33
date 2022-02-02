@@ -84,7 +84,8 @@ body {
 .product-catalog-select,
 .super-order,
 .pagination-prev-next,
-.phone-number {
+.phone-number,
+.footer-phone {
   color: inherit;
   text-decoration: none;
 }
@@ -193,27 +194,27 @@ body {
 }
 
 .catalog-navigation-link-1::before {
-  content: url("../images/index-page/categories/categorie\ \(1\).svg");
+  content: url("../images/index-page/categories/categorie-1.svg");
 }
 
 .catalog-navigation-link-2::before {
-  content: url("../images/index-page/categories/categorie\ \(2\).svg");
+  content: url("../images/index-page/categories/categorie-2.svg");
 }
 
 .catalog-navigation-link-3::before {
-  content: url("../images/index-page/categories/categorie\ \(3\).svg");
+  content: url("../images/index-page/categories/categorie-3.svg");
 }
 
 .catalog-navigation-link-4::before {
-  content: url("../images/index-page/categories/categorie\ \(4\).svg");
+  content: url("../images/index-page/categories/categorie-4.svg");
 }
 
 .catalog-navigation-link-5::before {
-  content: url("../images/index-page/categories/categorie\ \(5\).svg");
+  content: url("../images/index-page/categories/categorie-5.svg");
 }
 
 .catalog-navigation-link-6::before {
-  content: url("../images/index-page/categories/categorie\ \(6\).svg");
+  content: url("../images/index-page/categories/categorie-6.svg");
 }
 
 .term-header {
