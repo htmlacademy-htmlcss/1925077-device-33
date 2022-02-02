@@ -41,8 +41,31 @@ body {
   color: #000000;
 }
 
-li {
+.header-navigation-item,
+.catalog-navigation-item,
+.term-description-item,
+.footer-navigation-item,
+.social-networks-item,
+.catalog-breadcrumbs-item,
+.catalog-filter-item,
+.product-item,
+.pagination-item,
+.slider-pagination-item {
   list-style-type: none;
+}
+
+.header-navigation-list,
+.catalog-navigation-list,
+.term-description-list,
+.footer-navigation-list,
+.social-networks-list,
+.catalog-breadcrumbs-list,
+.catalog-filter-list,
+.product-list,
+.pagination-list,
+.slider-pagination {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -224,7 +247,6 @@ address {
 
 .about-list-item {
   color: #ffe17f;
-  list-style-type: disc;
 }
 
 .about-list-item p {
