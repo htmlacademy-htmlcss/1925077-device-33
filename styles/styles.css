@@ -166,8 +166,11 @@ body {
 
 .footer-direction {
 }
+
 .footer-navigation {
+  align-self: center;
 }
+
 .footer-navigation-list {
 }
 .footer-navigation-item {
@@ -189,6 +192,7 @@ body {
 .footer-phone {
   color: inherit;
   width: 200px;
+  text-align: right;
 }
 
 .footer-second-row {
@@ -209,4 +213,5 @@ body {
 
 .footer-logo-html {
   width: 200px;
+  text-align: right;
 }
