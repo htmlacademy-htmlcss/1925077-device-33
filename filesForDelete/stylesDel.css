@@ -41,49 +41,15 @@ body {
   color: #000000;
 }
 
-.header-navigation-item,
-.catalog-navigation-item,
-.term-description-item,
-.footer-navigation-item,
-.social-networks-item,
-.catalog-breadcrumbs-item,
-.catalog-filter-item,
-.product-item,
-.pagination-item,
-.slider-pagination-item {
+.li-li-li-li-li-li-li-li-li-li-li-li-li-li {
   list-style-type: none;
 }
 
-.header-navigation-list,
-.catalog-navigation-list,
-.term-description-list,
-.footer-navigation-list,
-.social-networks-list,
-.catalog-breadcrumbs-list,
-.catalog-filter-list,
-.product-list,
-.pagination-list,
-.slider-pagination {
-  margin: 0;
+.ul-ul-ul-ul-ul-ul-ul-ul-ul-ul-ul-ul-ul-ul {
   padding: 0;
 }
 
-.catalog-navigation-link,
-.footer-navigation-link,
-.social-networks-link,
-.search-link,
-.login-link,
-.logout-link,
-.compare-link,
-.shop-cart-link,
-.header-navigation-link,
-.catalog-breadcrumbs-link,
-.product-link,
-.pagination-link,
-.button-yellow-line,
-.product-catalog-select,
-.super-order,
-.pagination-prev-next {
+.link-link-link-link-link-link {
   color: inherit;
   text-decoration: none;
 }
@@ -99,39 +65,7 @@ body {
 }
 
 /* index.html start*/
-.page-header {
-  background-color: #ffe17f;
-}
 
-
-.search-input {
-  background-color: inherit;
-}
-
-.search-input,
-.search-link {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.login-link,
-.logout-link,
-.compare-link,
-.shop-cart-link {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.product-catalog-select,
-.header-navigation-link {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
 
 
 .slider-big-number {
