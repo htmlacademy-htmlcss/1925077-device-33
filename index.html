@@ -11,69 +11,80 @@
 
   <header class="page-header">
 
-
     <img src="images/header/logo.svg" width="145" height="36" class="page-logo" alt="Логотип магазина Девайс.">
 
+    <div class="yellow-wrapper">
+      <div class="header-first-row">
+        <div class="search-tandem">
+          <label>
+            <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
+          </label>
+          <a href="#" class="search-link">Найти</a>
+        </div>
 
-    <label>
-      <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
-    </label>
-    <a href="#" class="search-link">Найти</a>
+        <div class="user-tandem">
+          <a href="#" class="login-link">
+            Войти
+          </a>
+          <a href="#" class="visually-hidden logout-link">
+            Выйти
+          </a>
+        </div>
 
-    <a href="#" class="login-link">
-      Войти
-    </a>
-    <a href="#" class="visually-hidden logout-link">Выйти</a>
+        <div class="compare-shopcart-tandem">
+          <a href="#" class="compare-link">
+            Сравнить
+          </a>
+          <a href="#" class="shopcart-link">
+            Корзина
+          </a>
+        </div>
+      </div>
 
-    <a href="#" class="compare-link">
-      Сравнить
-    </a>
-    <a href="#" class="shop-cart-link">
-      Корзина
-    </a>
+      <div class="header-second-row">
+        <!-- Раскрывающийся список каталога начало -->
+        <a class="product-catalog-select" href="catalog.html">
+          Каталог товаров
+        </a>
+        <!-- Раскрывающийся список каталога конец -->
 
-    <!-- Раскрывающийся список каталога начало -->
-    <a class="product-catalog-select" href="catalog.html">
-      Каталог товаров
-    </a>
-    <!-- Раскрывающийся список каталога конец -->
-
-    <nav class="header-navigation">
-      <ul class="header-navigation-list">
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="header-navigation-item">
-          <a class="header-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
   </header>
 
-  <main class="main-index">
-
+  <main class="main-index main-container">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
-    <!-- Карусель товаров начало -->
     <section class="carousel-section">
       <h2 class="visually-hidden">Несколько рекомендованных товаров</h2>
-      <button class="slider-button slider-prev" type="button" aria-label="Предыдущее фото.">
-        <img src="../images/index-page/slider-button.svg" alt="Предыдущее фото." width="20" height="60">
-      </button>
-      <img class="slider-image" src="images/index-page/slider/slider-copter.png" alt="Квадрокоптер с мощным лазером"
-        width="560" height="560">
-      <button class="slider-button slider-next" type="button" aria-label="Следующее фото.">
-        <img src="../images/index-page/slider-button.svg" alt="Следующее фото." width="20" height="60">
-      </button>
+      <div class="carousel-section-wrapper">
+        <div class="carousel-main-image">
+          <button class="slider-button slider-prev" type="button" aria-label="Предыдущее фото.">
+            <img src="../images/index-page/slider-button.svg" alt="Предыдущее фото." width="20" height="60">
+          </button>
+          <!-- Стоит поработать над размером картинки -->
+          <img class="slider-image" src="images/index-page/slider/slider-copter.png" alt="Квадрокоптер с мощным лазером"
+            width="500" height="500">
+          <button class="slider-button slider-next" type="button" aria-label="Следующее фото.">
+            <img src="../images/index-page/slider-button.svg" alt="Следующее фото." width="20" height="60">
+          </button>
+        </div>
 
-      <!-- Спискок радиоподобных кнопок -->
-      <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <p class="slider-big-number">01</p>
+        <div class="carousel-description">
           <p class="slider-slogan">
             Порхает как бабочка,<br>
             жалит как пчела!
@@ -83,9 +94,7 @@
             замаскированным под стандартную камеру.
           </p>
           <a href="#" class="button-yellow-line">Подробнее</a>
-          <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden">Квадрокоптер</span>
-          </button>
+
           <dl class="slider-properties">
             <dt class="slider-meaning">800 м</dt>
             <dd class="slider-property">Дальность полета</dd>
@@ -93,82 +102,50 @@
             <dt class="slider-meaning">50 м</dt>
             <dd class="slider-property">Радиус поражения</dd>
           </dl>
-        </li>
-
-        <!-- Описание и свойста текущего товара -->
-        <li class="slider-pagination-item">
-          <p class="slider-slogan">Худеем<br>правильно!</p>
-          <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-            соблюдать диету.</p>
-          <a href="#" class="button-yellow-line">Подробнее</a>
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">Фитнес-браслет</span>
-          </button>
-          <dl class="slider-properties">
-            <dt class="slider-meaning">48 часов</dt>
-            <dd class="slider-property">Без подзарядки</dd>
-          </dl>
-        </li>
-
-        <li class="slider-pagination-item">
-          <p class="slider-slogan">Делай селфи,<br>как Бен Стиллер! </p>
-          <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-            метров длиной и весом всего 5 кг.</p>
-          <a href="#" class="button-yellow-line">Подробнее</a>
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">Палка для селфи</span>
-          </button>
-          <dl class="slider-properties">
-            <dt class="slider-meaning">8,5 м</dt>
-            <dd class="slider-property">Длина палки</dd>
-
-            <dt class="slider-meaning">5 кг</dt>
-            <dd class="slider-property">Вес палки</dd>
-
-            <dt class="slider-meaning">Карбон</dt>
-            <dd class="slider-property">Материал</dd>
-          </dl>
-        </li>
-      </ol>
+        </div>
+      </div>
     </section>
-    <!-- Карусель товаров конец -->
 
     <!-- Линки с иконками в каталог с выбранной категорией -->
-    <nav class="catalog-navigation">
-      <ul class="catalog-navigation-list">
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-1 catalog-navigation-link" href="#">Виртуальная реальность</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-2 catalog-navigation-link" href="#">Моноподы для селфи</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-3 catalog-navigation-link" href="#">Экшн-камеры</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-4 catalog-navigation-link" href="#">Фитнесс-браслеты</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-5 catalog-navigation-link" href="#">Умные часы</a>
-        </li>
-        <li class="catalog-navigation-item">
-          <a class="catalog-navigation-link-6 catalog-navigation-link" href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="white-wrapper">
+      <nav class="catalog-navigation">
+        <ul class="catalog-navigation-list">
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-1 catalog-navigation-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-2 catalog-navigation-link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-3 catalog-navigation-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-4 catalog-navigation-link" href="#">Фитнесс-браслеты</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-5 catalog-navigation-link" href="#">Умные часы</a>
+          </li>
+          <li class="catalog-navigation-item">
+            <a class="catalog-navigation-link-6 catalog-navigation-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Доставка, гарантия и кредит начало -->
     <section class="terms-section">
-      <h2 class="visually-hidden">Кратко о доставке, гарантии и кредите</h2>
-      <button class="button-yellow-line" type="button" id="termBtn1">
-        Доставка
-      </button>
-      <button class="button-yellow-line" type="button" id="termBtn2">
-        Гарантия
-      </button>
-      <button class="button-yellow-line" type="button" id="termBtn3">
-        Кредит
-      </button>
+      <div class="terms-buttons-wrapper">
+        <h2 class="visually-hidden">Кратко о доставке, гарантии и кредите</h2>
+        <button class="button-yellow-line" type="button" id="termBtn1">
+          Доставка
+        </button>
+        <button class="button-yellow-line" type="button" id="termBtn2">
+          Гарантия
+        </button>
+        <button class="button-yellow-line" type="button" id="termBtn3">
+          Кредит
+        </button>
+      </div>
 
       <ol class="term-description-list">
         <li class="term-delievery-item">
@@ -179,144 +156,144 @@
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </li>
-        <li class="term-guarant-item">
-          <h3 class="term-header">Гарантия</h3>
-          <p class="term-text">
-            Если из-за возгорания купленного у нас товара у вас<br>
-            сгорит дом — не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, конечно же.
-          </p>
-        </li>
-        <li class="term-credit-item">
-          <h3 class="term-header">Кредит</h3>
-          <p class="term-text">
-            Залезть в долговую яму стало проще! Кредитные <br>
-            консультанты подберут для вас наиболее выгодные<br>
-            условия кредита. Выгодные для банка, разумеется.
-          </p>
-        </li>
       </ol>
     </section>
     <!-- Доставка, гарантия и кредит конец -->
 
-    <div class="super-order-back">
-      <a href="#" class="super-order">Доставим редкий товар под заказ</a>
+    <div class="white-wrapper">
+      <div class="super-order-wrapper">
+        <a href="#" class="super-order">Доставим редкий товар под заказ</a>
+      </div>
     </div>
 
-    <section class="about-company">
-      <h2 class="about-and-contacts-header">О нас</h2>
-      <p class="about-and-contacts-text">
-        Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-      </p>
-      <p class="about-and-contacts-text">
-        Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
-      </p>
-      <ul class="about-list">
-        <li class="about-list-item">
-          <p>Меловые линии</p>
-        </li>
-        <li class="about-list-item">
-          <p>СДИК</p>
-        </li>
-        <li class="about-list-item">
-          <p>ТоксБерри</p>
-        </li>
-      </ul>
-      <a href="#" class="button-yellow-line">Подробнее о нас</a>
-    </section>
-
-    <section class="contacts">
-      <h2 class="about-and-contacts-header">Контакты</h2>
-      <p class="about-and-contacts-text">
-        Вы можете забрать товар сами, заехав в наш офис.
-        Заодно сможете проверить работоспособность покупки.
-      </p>
-      <h3 class="about-and-contacts-h3">Интернет-магазин «Девайс»</h3>
-
-      <address class="main-address">
-        <p class="about-and-contacts-p">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+    <div class="about-and-contacts-wrapper">
+      <section class="about-company">
+        <h2 class="about-and-contacts-header">О нас</h2>
+        <p class="about-and-contacts-text">
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         </p>
-        <a class="phone-number" href="tel:+78128121212"><ins>+7 (812) 812-12-12</ins></a>
-      </address>
+        <p class="about-and-contacts-text">
+          Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+        </p>
+        <ul class="about-list">
+          <li class="about-list-item">
+            <p>Меловые линии</p>
+          </li>
+          <li class="about-list-item">
+            <p>СДИК</p>
+          </li>
+          <li class="about-list-item">
+            <p>ТоксБерри</p>
+          </li>
+        </ul>
+        <a href="#" class="button-yellow-line">Подробнее о нас</a>
+      </section>
 
-      <h3 class="about-and-contacts-h3">Время работы</h3>
-      <p class="about-and-contacts-p">
-        пн—пт: с <time>10:00</time> до <time>22:00</time><br>
-        сб—вс: с <time>10:00</time> до <time>19:00</time>
-      </p>
-      <address>
-        <a href="mailto:mail@htmlacademy.ru" class="button-yellow-line">Напишите нам</a>
-      </address>
-    </section>
+      <section class="contacts">
+        <h2 class="about-and-contacts-header">Контакты</h2>
+        <p class="about-and-contacts-text">
+          Вы можете забрать товар сами, заехав в наш офис.
+          Заодно сможете проверить работоспособность покупки.
+        </p>
+        <h3 class="about-and-contacts-h3">Интернет-магазин «Девайс»</h3>
 
-    <section class="subscribe">
-      <h2 class="subscribe-h2">Подпишитесь<br> на рассылку</h2>
-      <p class="subscribe-p">
-        Еженедельный дайджест с обзорами новинок,<br>
-        длительными тест-драйвами, распаковками, а также акции,<br>
-        спецпредложения и вот это вот всё.
-      </p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="sub-email" id="sub-email-id" placeholder="Ваш e-mail" class="subscribe-email">
-        <button type="submit" class="subscribe-button">Подписаться</button>
-      </form>
-      <p class="this-free">Это бесплатно</p>
+        <address class="main-address">
+          <p class="about-and-contacts-p">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
+          <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+
+        <h3 class="about-and-contacts-h3">Время работы</h3>
+        <p>
+          пн—пт: с <time>10:00</time> до <time>22:00</time><br>
+          сб—вс: с <time>10:00</time> до <time>19:00</time>
+        </p>
+        <address>
+          <a href="mailto:mail@htmlacademy.ru" class="button-yellow-line">Напишите нам</a>
+        </address>
+      </section>
+    </div>
+
+    <section class="subscribe-wrapper">
+      <div class="subscribe-first-row">
+        <h2 class="subscribe-h2">Подпишитесь<br> на рассылку</h2>
+        <p class="subscribe-p">
+          Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br>
+          спецпредложения и вот это вот всё.
+        </p>
+      </div>
+
+      <div class="subscribe-second-row">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
+          <input type="email" name="sub-email" id="sub-email-id" placeholder="Ваш e-mail" class="subscribe-email">
+          <button type="submit" class="subscribe-button">Подписаться</button>
+        </form>
+        <p class="this-free">Это бесплатно</p>
+      </div>
     </section>
 
   </main>
 
-  <footer class="footer-page">
+  <footer class="page-footer">
 
     <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
 
-    <address class="footer-address">
-      <p class="footer-direction">
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
-      </p>
-      <a class="footer-phone" href="tel:+78128121212"><ins>+7 (812) 812-12-12</ins></a>
-    </address>
+    <div class="footer-first-row">
+      <address class="footer-address">
+        <p class="footer-direction">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+      </address>
 
-    <nav class="footer-navigation">
-      <ul class="footer-navigation-list">
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-navigation-item">
-          <a class="footer-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-list">
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Социальные сети -->
-    <section class="social-networks-section">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-networks-list">
-        <li class="social-networks-item">
-          <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-        <li class="social-networks-item">
-          <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link">
-            <span class="visually-hidden">Инстаграмм</span>
-          </a>
-        </li>
-        <li class="social-networks-item">
-          <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
+      <address class="footer-address footer-phone">
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </div>
 
-      <a href="https://htmlacademy.ru/">
-        <img src="images/footer/footer-logo-academy.svg" alt="Перейти на сайт хтмл-Академии" class="footer-logo-html"
-          width="115" height="33">
+    <div class="footer-second-row">
+      <div class="footer-yellow-line"></div>
+
+      <section class="social-networks-section">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-networks-list">
+          <li class="social-networks-item">
+            <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link">
+              Фусбук
+            </a>
+          </li>
+          <li class="social-networks-item">
+            <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link">
+              Инстаграм
+            </a>
+          </li>
+          <li class="social-networks-item">
+            <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link">
+              Твиттер
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <a href="https://htmlacademy.ru/" class="footer-logo-html">
+        <img src="images/footer/footer-logo-academy.svg" alt="Перейти на сайт хтмл-Академии" width="115" height="33">
       </a>
-    </section>
+    </div>
 
   </footer>
 
