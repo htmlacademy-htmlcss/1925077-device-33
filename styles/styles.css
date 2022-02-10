@@ -28,9 +28,10 @@ html {
 }
 
 body {
+  display: flex;
   width: 1440px;
   margin: 0 auto;
-  display: flex;
+  padding: 0;
   flex-direction: column;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
@@ -42,10 +43,7 @@ body {
   color: #000000;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
+/* Начало шапки страницы */
 .page-header {
   background-color: #ffffff;
 }
@@ -63,6 +61,8 @@ body {
 
 .header-first-row {
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -107,9 +107,12 @@ body {
 
 .header-second-row {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .product-catalog-select {
+  width: 293px;
   margin-right: auto;
 }
 
@@ -127,21 +130,27 @@ body {
 }
 
 .header-navigation {
+  /* нужна ли тут ширина, если ширина задана у ФЭ слева, и тот ФЭ
+  отталкивает этот маргином? */
+  width: 500px;
 }
 
 .header-navigation-list {
+  margin: 0;
+  padding: 0;
 }
 
 .header-navigation-item {
+  text-align: right;
+  list-style-type: none;
+}
+/* Конец шапки страницы */
+
+.main-container {
+  flex-grow: 1;
 }
 
-
-
-
-
-
-
-
+/* Начало подвала страницы */
 .page-footer {
   background: #444444;
   color: #ffffff;
@@ -150,7 +159,10 @@ body {
 
 .footer-first-row {
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-address {
@@ -166,11 +178,8 @@ body {
 
 .footer-direction {
 }
-
 .footer-navigation {
-  align-self: center;
 }
-
 .footer-navigation-list {
 }
 .footer-navigation-item {
@@ -197,11 +206,13 @@ body {
 
 .footer-second-row {
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social-networks-section {
-  align-self: center;
 }
 
 .social-networks-list {
@@ -215,3 +226,293 @@ body {
   width: 200px;
   text-align: right;
 }
+/* Конец подвала страницы */
+
+/* Начало главного содержимого главной страницы */
+.carousel-section {
+  padding: 0 140px;
+  background-color: #ffffff;
+}
+.carousel-section-wrapper {
+  display: flex;
+}
+.carousel-main-image {
+  display: flex;
+  align-items: center;
+  width: 560px;
+  margin-right: 40px;
+}
+
+.slider-button {
+  border: none;
+  background-color: inherit;
+}
+
+.slider-prev {
+}
+.slider-image {
+}
+.slider-next {
+  transform: scale(-1, 1);
+}
+.carousel-description {
+  width: 560px;
+}
+.slider-slogan {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.slider-description {
+  font-size: 18px;
+  line-height: 30px;
+}
+.button-yellow-line {
+}
+.slider-properties {
+}
+.slider-property {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.slider-meaning {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+
+.catalog-navigation {
+  padding: 0;
+  margin: 0 140px;
+}
+
+.catalog-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-navigation-item {
+  width: 160px;
+  list-style-type: none;
+  background-color: #ffe17f;
+}
+
+.catalog-navigation-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Доставка, гарантия и кредит начало */
+.terms-section {
+  display: flex;
+  padding: 0 140px;
+  align-items: center;
+}
+
+.terms-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-right: 116px;
+}
+
+.term-description-list {
+  margin: 0;
+  padding: 0;
+  width: 452px;
+}
+
+.term-delievery-item {
+  list-style-type: none;
+}
+
+.term-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.term-text-1 {
+}
+/* Доставка, гарантия и кредит конец */
+
+.white-wrapper {
+  background-color: #ffffff;
+}
+
+.super-order-wrapper {
+  /* сомневаюсь */
+  display: table;
+  width: 1160px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+
+.super-order {
+  /* сомневаюсь */
+  display: table-cell;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.about-and-contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  background-color: #ffffff;
+}
+
+.about-company {
+  width: 520px;
+}
+
+.about-and-contacts-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-and-contacts-text {
+}
+
+.about-list {
+  margin: 0;
+}
+
+.about-list-item {
+  color: #ffe17f;
+}
+
+.about-list-item p {
+  font-weight: bold;
+  color: #000000;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.about-and-contacts-h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* Универсальный стиль кнопки
+с желтой полосой */
+.button-yellow-line {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+.contacts {
+  width: 532px;
+}
+
+.phone-number {
+  color: inherit;
+  font-style: normal;
+}
+
+.main-address {
+  font-style: normal;
+}
+
+/* Секция с подпиской */
+.subscribe-wrapper {
+  margin: 0 141px;
+}
+
+.subscribe-first-row {
+  display: flex;
+  padding-left: 6px;
+  align-items: center;
+}
+
+.subscribe-h2 {
+  width: 350px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  margin-right: 256px;
+}
+
+.subscribe-p {
+  width: 560px;
+}
+
+.subscribe-second-row {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form {
+  display: flex;
+  width: 810px;
+  margin-right: 188px;
+}
+
+.subscribe-email {
+  width: 557px;
+  color: inherit;
+  opacity: 0.5;
+  background-color: inherit;
+  border: none;
+  border-bottom: 3px #c4c4c4 solid;
+}
+
+.subscribe-button {
+  width: 253px;
+  height: 57px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 3px #c4c4c4 solid;
+}
+
+.this-free {
+  width: 160px;
+  text-align: left;
+}
+/* Конец главного содержимого главной страницы */
+
