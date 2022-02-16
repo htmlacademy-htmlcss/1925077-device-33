@@ -97,60 +97,63 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Стоимость</legend>
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Стоимость</legend>
+            </fieldset>
+          </div>
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="black" class="color-checkbox" checked>Черный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="white" class="color-checkbox" checked>Белый
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="blue" class="color-checkbox" disabled>Синий
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="red" class="color-checkbox" disabled>Красный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="checkbox" name="pink" class="color-checkbox" disabled>Розовый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-          </fieldset>
-
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Цвет</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="black" class="color-checkbox" checked>Черный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="white" class="color-checkbox" checked>Белый
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="blue" class="color-checkbox" disabled>Синий
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="red" class="color-checkbox" disabled>Красный
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="checkbox" name="pink" class="color-checkbox" disabled>Розовый
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-legend">Bluetooth</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="radio" name="radio-bluetooth" class="color-checkbox" checked value="yes">Есть
-                </label>
-              </li>
-            </ul>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control-label">
-                  <input type="radio" name="radio-bluetooth" class="color-checkbox" value="no">Нет
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
+          <div class="catalog-filter-wrapper">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-legend">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="radio" name="radio-bluetooth" class="color-checkbox" checked value="yes">Есть
+                  </label>
+                </li>
+              </ul>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control-label">
+                    <input type="radio" name="radio-bluetooth" class="color-checkbox" value="no">Нет
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <button class="button-yellow-line" type="submit">Показать</button>
 
         </form>
@@ -162,7 +165,7 @@
           <h2 class="sorting-header-word">
             Сортировка:
           </h2>
-          <label class="visually-hidden sorting-options-select">Выбрать опцию сортировки
+          <label class="sorting-options-select" aria-label="Выбрать опцию сортировки">
             <select class="sorting-select">
               <option value="popular">Популярные</option>
             </select>
@@ -255,33 +258,33 @@
             Загрузить ещё
           </button>
 
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-prev pagination-prev-next" href="#">
-                Назад
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-next  pagination-prev-next" href="#">
-                Вперед
-              </a>
-            </li>
-          </ul>
+          <div class="pagination">
+            <a class="pagination-prev pagination-prev-next" href="#">
+              Назад
+            </a>
+
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+            </ul>
+
+            <a class="pagination-next  pagination-prev-next" href="#">
+              Вперед
+            </a>
+          </div>
         </section>
       </div>
     </div>
@@ -327,18 +330,18 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-networks-list">
           <li class="social-networks-item">
-            <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link visually-hidden">
-              Фусбук
+            <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link">
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-networks-item">
-            <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link visually-hidden">
-              Инстаграм
+            <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link">
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-networks-item">
-            <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link visually-hidden">
-              Твиттер
+            <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link">
+              <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
