@@ -457,7 +457,6 @@ body {
 .terms-buttons-wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   flex-basis: 319px;
   padding: 65px 0;
   width: 280px;
