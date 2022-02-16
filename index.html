@@ -19,7 +19,7 @@
           <label>
             <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on" name="search-input">
           </label>
-          <a href="#" class="search-link">Найти</a>
+          <button class="search-button">Найти</button>
         </div>
 
         <div class="user-tandem">
@@ -49,19 +49,22 @@
         <!-- Раскрывающийся список каталога конец -->
 
         <nav class="header-navigation">
-          <ul class="header-navigation-list">
+          <ul class="header-navigation-list reset-list">
             <li class="header-navigation-item">
-              <a class="header-navigation-link" href="#">Доставка</a>
+              <a class="header-navigation-link" href="#">Контакты</a>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">Гарантия</a>
             </li>
             <li class="header-navigation-item">
-              <a class="header-navigation-link" href="#">Контакты</a>
+              <a class="header-navigation-link" href="#">Доставка</a>
             </li>
+
           </ul>
         </nav>
+
       </div>
+
     </div>
 
   </header>
@@ -85,22 +88,33 @@
         </div>
 
         <div class="carousel-description">
-          <p class="slider-slogan">
-            Порхает как бабочка,<br>
+          <p class="slider-slogan reset-margin">
+            Порхает как бабочка,
             жалит как пчела!
           </p>
-          <p class="slider-description">
-            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную камеру.
+          <p class="slider-description reset-margin">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="button-yellow-line">Подробнее</a>
+
+          <div class="carousel-buttons-wrapper">
+            <a href="#" class="button-yellow-line">Подробнее</a>
+            <div class="like-radio-wrapper">
+              <button type="button" class="like-radio current-like-radio"
+                aria-label="Первый рекомендованный товар.">1</button>
+              <button type="button" class="like-radio" aria-label="Первый рекомендованный товар.">2</button>
+              <button type="button" class="like-radio" aria-label="Первый рекомендованный товар.">3</button>
+            </div>
+          </div>
 
           <dl class="slider-properties">
-            <dt class="slider-meaning">800 м</dt>
-            <dd class="slider-property">Дальность полета</dd>
-
-            <dt class="slider-meaning">50 м</dt>
-            <dd class="slider-property">Радиус поражения</dd>
+            <div class="meaning-property-wrapper">
+              <dt class="slider-meaning">800 м</dt>
+              <dd class="slider-property">Дальность полета</dd>
+            </div>
+            <div>
+              <dt class="slider-meaning">50 м</dt>
+              <dd class="slider-property">Радиус поражения</dd>
+            </div>
           </dl>
         </div>
       </div>
@@ -109,24 +123,36 @@
     <!-- Линки с иконками в каталог с выбранной категорией -->
     <div class="white-wrapper">
       <nav class="catalog-navigation">
-        <ul class="catalog-navigation-list">
+        <ul class="catalog-navigation-list reset-list">
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-1 catalog-navigation-link" href="#">Виртуальная реальность</a>
+            <a class="catalog-navigation-link-1 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Виртуальная реальность</p>
+            </a>
           </li>
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-2 catalog-navigation-link" href="#">Моноподы для селфи</a>
+            <a class="catalog-navigation-link-2 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Моноподы для селфи</p>
+            </a>
           </li>
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-3 catalog-navigation-link" href="#">Экшн-камеры</a>
+            <a class="catalog-navigation-link-3 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Экшн-камеры</p>
+            </a>
           </li>
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-4 catalog-navigation-link" href="#">Фитнесс-браслеты</a>
+            <a class="catalog-navigation-link-4 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Фитнесс-браслеты</p>
+            </a>
           </li>
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-5 catalog-navigation-link" href="#">Умные часы</a>
+            <a class="catalog-navigation-link-5 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Умные часы</p>
+            </a>
           </li>
           <li class="catalog-navigation-item">
-            <a class="catalog-navigation-link-6 catalog-navigation-link" href="#">Квадрокоптеры</a>
+            <a class="catalog-navigation-link-6 catalog-navigation-link" href="#">
+              <p class="catalog-navigation-category reset-margin">Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -134,33 +160,40 @@
 
     <!-- Доставка, гарантия и кредит начало -->
     <section class="terms-section">
-      <div class="terms-buttons-wrapper">
+      <div class="">
         <h2 class="visually-hidden">Кратко о доставке, гарантии и кредите</h2>
-        <button class="button-yellow-line" type="button" id="termBtn1">
-          Доставка
-        </button>
-        <button class="button-yellow-line" type="button" id="termBtn2">
-          Гарантия
-        </button>
-        <button class="button-yellow-line" type="button" id="termBtn3">
-          Кредит
-        </button>
+
+        <div class="terms-wrapper">
+          <div class="terms-buttons-wrapper">
+            <button class="button-yellow-line term-button" type="button" id="termBtn1">
+              Доставка
+            </button>
+            <button class="button-yellow-line term-button" type="button" id="termBtn2">
+              Гарантия
+            </button>
+            <button class="button-yellow-line term-button" type="button" id="termBtn3">
+              Кредит
+            </button>
+          </div>
+
+          <ol class="term-description-list reset-list">
+            <li class="term-delievery-item">
+              <h3 class="term-header reset-margin">Доставка</h3>
+              <p class="term-text-1 reset-margin">
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь<br>
+                мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
 
-      <ol class="term-description-list">
-        <li class="term-delievery-item">
-          <h3 class="term-header">Доставка</h3>
-          <p class="term-text-1">
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно! Ведь<br>
-            мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </li>
-      </ol>
+
     </section>
     <!-- Доставка, гарантия и кредит конец -->
 
-    <div class="white-wrapper">
+    <div class="white-wrapper-super-order">
       <div class="super-order-wrapper">
         <a href="#" class="super-order">Доставим редкий товар под заказ</a>
       </div>
@@ -168,44 +201,44 @@
 
     <div class="about-and-contacts-wrapper">
       <section class="about-company">
-        <h2 class="about-and-contacts-header">О нас</h2>
-        <p class="about-and-contacts-text">
+        <h2 class="about-and-contacts-header reset-margin">О нас</h2>
+        <p class="about-and-contacts-text reset-margin">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         </p>
-        <p class="about-and-contacts-text">
+        <p class="about-and-contacts-text reset-margin">
           Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
         </p>
-        <ul class="about-list">
+        <ul class="about-list reset-list">
           <li class="about-list-item">
-            <p>Меловые линии</p>
+            Меловые линии
           </li>
           <li class="about-list-item">
-            <p>СДИК</p>
+            СДИК
           </li>
           <li class="about-list-item">
-            <p>ТоксБерри</p>
+            ТоксБерри
           </li>
         </ul>
         <a href="#" class="button-yellow-line">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
-        <h2 class="about-and-contacts-header">Контакты</h2>
-        <p class="about-and-contacts-text">
+        <h2 class="about-and-contacts-header reset-margin">Контакты</h2>
+        <p class="about-and-contacts-text reset-margin">
           Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.
         </p>
-        <h3 class="about-and-contacts-h3">Интернет-магазин «Девайс»</h3>
+        <h3 class="about-and-contacts-h3 reset-margin">Интернет-магазин «Девайс»</h3>
 
         <address class="main-address">
-          <p class="about-and-contacts-p">
+          <p class="about-and-contacts-p reset-margin">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
 
-        <h3 class="about-and-contacts-h3">Время работы</h3>
-        <p>
+        <h3 class="about-and-contacts-h3 reset-margin">Время работы</h3>
+        <p class="reset-margin">
           пн—пт: с <time>10:00</time> до <time>22:00</time><br>
           сб—вс: с <time>10:00</time> до <time>19:00</time>
         </p>
@@ -217,8 +250,11 @@
 
     <section class="subscribe-wrapper">
       <div class="subscribe-first-row">
-        <h2 class="subscribe-h2">Подпишитесь<br> на рассылку</h2>
-        <p class="subscribe-p">
+        <h2 class="subscribe-h2 reset-margin">
+          Подпишитесь
+          на рассылку
+        </h2>
+        <p class="subscribe-p reset-margin">
           Еженедельный дайджест с обзорами новинок,<br>
           длительными тест-драйвами, распаковками, а также акции,<br>
           спецпредложения и вот это вот всё.
@@ -230,7 +266,7 @@
           <input type="email" name="sub-email" id="sub-email-id" placeholder="Ваш e-mail" class="subscribe-email">
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
-        <p class="this-free">Это бесплатно</p>
+        <p class="this-free reset-margin">Это бесплатно</p>
       </div>
     </section>
 
@@ -238,17 +274,19 @@
 
   <footer class="page-footer">
 
-    <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип магазина Девайс.">
+    <img src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип магазина Девайс."
+      class="footer-device-logo">
 
     <div class="footer-first-row">
       <address class="footer-address">
-        <p class="footer-direction">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        <p class="footer-direction reset-margin">
+          Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
         </p>
       </address>
 
       <nav class="footer-navigation">
-        <ul class="footer-navigation-list">
+        <ul class="footer-navigation-list reset-list">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
           </li>
@@ -271,19 +309,19 @@
 
       <section class="social-networks-section">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-networks-list">
+        <ul class="social-networks-list reset-list">
           <li class="social-networks-item">
-            <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link">
+            <a href="https://www.facebook.com/htmlacademy/" class="social-networks-link visually-hidden">
               Фусбук
             </a>
           </li>
           <li class="social-networks-item">
-            <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link">
+            <a href="https://www.instagram.com/htmlacademy/" class="social-networks-link visually-hidden">
               Инстаграм
             </a>
           </li>
           <li class="social-networks-item">
-            <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link">
+            <a href="https://twitter.com/htmlacademy_ru/" class="social-networks-link visually-hidden">
               Твиттер
             </a>
           </li>
