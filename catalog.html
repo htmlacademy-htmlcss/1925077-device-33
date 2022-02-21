@@ -15,7 +15,7 @@
       <img src="images/header/logo.svg" width="145" height="36" alt="Перейти на главную страницу." class="page-logo">
     </a>
 
-    <div class="yellow-wrapper">
+    <div class="header-yellow-wrapper">
       <div class="header-first-row">
         <div class="search-tandem">
           <label>
@@ -92,7 +92,7 @@
     </header>
 
     <div class="catalog-main-wrapper">
-      <div class="catalog-filter-column">
+      <section class="catalog-filter-column">
         <h2 class="filter-sorting-header reset-margin">Фильтр:</h2>
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -155,19 +155,20 @@
           <button class="button-yellow-line" type="submit">Показать</button>
 
         </form>
-      </div>
+      </section>
 
-      <div class="catalog-right-column">
+      <section class="catalog-right-column">
 
         <div class="sorting-mini-wrapper">
-          <h2 class="sorting-header-word reset-margin">
-            Сортировка:
+          <h2 class="visually-hidden">
+            Карточки товаров и их сортировка
           </h2>
-          <label class="sorting-options-select" aria-label="Выбрать опцию сортировки">
-            <select class="sorting-select">
-              <option value="popular">Популярные</option>
-            </select>
+          <label class="sorting-header-word" for="sorting-select">
+            Сортировка:
           </label>
+          <select class="sorting-select" id="sorting-select">
+            <option value="popular">Популярные</option>
+          </select>
           <div class="up-down-buttons-wrapper">
             <button class="up-down-sorting" type="button" aria-label="По возрастанию">
             </button>
@@ -181,8 +182,8 @@
           <ul class="product-list reset-list">
             <li class="product-item">
               <a href="#" class="product-link">
-                <img src="images/catalog-page/products/product(1).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(1).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
                 <h3 class="product-title reset-margin">
@@ -197,8 +198,8 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(2).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(2).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
                 <h3 class="product-title reset-margin">
@@ -213,8 +214,8 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(3).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(3).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
                 <h3 class="product-title reset-margin">
@@ -229,8 +230,8 @@
             <li class="product-item">
               <a href="#" class="product-link">
 
-                <img src="images/catalog-page/products/product(4).jpg" width="360" height="380"
-                  alt="Нужен ли альт при заголовке ниже?" class="product-img">
+                <img src="images/catalog-page/products/product(4).jpg" width="360" height="380" alt="Фото товара"
+                  class="product-img">
               </a>
               <div class="name-and-price-wrapper">
                 <h3 class="product-title reset-margin">
@@ -276,7 +277,7 @@
             </a>
           </div>
         </section>
-      </div>
+      </section>
     </div>
 
   </main>
