@@ -583,23 +583,20 @@ body {
 }
 
 .white-wrapper-super-order {
-  padding-top: 70px;
+  /* padding-top: 70px; */
 
   background-color: #ffffff;
 }
 
 .super-order-wrapper {
-  /* сомневаюсь */
-  display: table;
-  height: 100px;
-  margin: 300px auto 0;
+  padding: 70px 0;
 
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
-.super-order {
-  /* сомневаюсь */
-  display: table-cell;
+.super-order-link {
+  display: block;
+  padding: 40px;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -607,17 +604,18 @@ body {
   line-height: 23px;
   font-weight: 800;
   text-align: center;
-  vertical-align: middle;
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+
+  background: #f0f0f0;
 }
 
 .about-and-contacts-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 70px 140px;
+  padding: 0 0 70px 0;
 
   background-color: #ffffff;
 }
@@ -695,9 +693,11 @@ body {
 
 /* Секция с подпиской */
 .subscribe-wrapper {
-  margin: 0 141px;
+  padding: 0 141px;
   padding-top: 64px;
   padding-bottom: 56px;
+
+  background: #f0f0f0;
 }
 
 .subscribe-first-row {
