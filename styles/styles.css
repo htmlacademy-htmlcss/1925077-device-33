@@ -42,7 +42,7 @@ body {
   font-weight: normal;
   color: #000000;
 
-  background-color: #f0f0f0;
+  background: #e5e5e5;
 }
 
 .visually-hidden {
@@ -71,14 +71,22 @@ body {
 }
 
 /* Начало шапки страницы */
-.page-header {
+.body-white-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+
   background-color: #ffffff;
 }
 
-.header-yellow-wrapper {
+.page-header {
   width: 1160px;
-  margin: -10px auto 0;
-  padding: 43px 0 23px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.header-yellow-wrapper {
+  margin-top: -13px;
+  padding: 43px 60px 23px;
 
   background-color: #ffe17f;
 }
@@ -86,7 +94,7 @@ body {
 .page-logo {
   display: block;
   margin-top: 18px;
-  margin-left: 200px;
+  margin-left: 60px;
 }
 
 .page-logo-link {
@@ -95,17 +103,19 @@ body {
 .header-first-row {
   display: flex;
   justify-content: space-between;
-  margin: 0 60px;
   margin-bottom: 30px;
 }
 
 .search-tandem {
   display: flex;
+
+  border: 2px solid #000000;
+  border-radius: 50px;
 }
 
 .search-input {
-  width: 359px;
-  height: 40px;
+  width: 357px;
+  height: 36px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -115,7 +125,7 @@ body {
   color: inherit;
 
   background-color: inherit;
-  border-right: none;
+  border: none;
 }
 
 .search-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -125,8 +135,8 @@ body {
 }
 
 .search-button {
-  width: 160px;
-  height: 40px;
+  width: 158px;
+  height: 36px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -135,6 +145,8 @@ body {
   font-weight: normal;
 
   background-color: inherit;
+  border: none;
+  border-left: 2px solid #000000;
 }
 
 .user-tandem {
@@ -153,10 +165,13 @@ body {
 
 .compare-shopcart-tandem {
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 240px;
+}
+
+.compare-shopcart-tandem:first-child {
+  margin-left: auto;
 }
 
 .compare-link,
@@ -173,7 +188,6 @@ body {
 
 .header-second-row {
   display: flex;
-  margin: 0 60px;
 }
 
 .product-catalog-select {
@@ -202,18 +216,45 @@ body {
 
 .header-navigation-list {
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 700px;
 }
 
-.header-navigation-item:not(:last-child) {
-  margin-left: 50px;
+.header-navigation-item {
+  margin-left: 45px;
 }
 
+.header-navigation-item:first-child {
+  margin-left: auto;
+}
 /* Конец шапки страницы */
+
+.index-main-yellow-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 113px;
+  margin: 0 auto;
+
+  background-color: #ffe17f;
+}
+
+.recommended-number {
+  margin-right: 49px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+  color: #ffffff;
+}
+
 .main-container {
   flex-grow: 1;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /* Начало подвала страницы */
@@ -339,10 +380,9 @@ body {
 }
 
 .carousel-section {
-  padding: 0 140px;
-  padding-top: 85px;
-
-  background-color: #ffffff;
+  margin-top: -151px;
+  padding: 0;
+  /* padding-top: 85px; */
 }
 
 .carousel-section-wrapper {
@@ -350,33 +390,49 @@ body {
 }
 
 .carousel-main-image {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   width: 560px;
   margin-right: 40px;
 }
 
 .slider-button {
+  position: absolute;
+  z-index: 5;
+  /* top: 50%; */
+  margin-top: 211px;
+  padding: 0;
+
   background-color: inherit;
   border: none;
 }
 
 .slider-prev {
+  margin-left: 30px;
 }
 
+
 .slider-image {
+  position: relative;
+
+  width: 560px;
+  height: 560px;
+  object-fit: contain;
 }
 
 .slider-next {
+  margin-left: -20px;
+
   transform: scale(-1, 1);
 }
 
 .carousel-description {
   width: 560px;
+  align-self: flex-end;
 }
 
 .slider-slogan {
-  margin-top: 0;
+  /* margin-top: auto; */
   margin-bottom: 29px;
 
   font-family: "Raleway", sans-serif;
@@ -417,11 +473,13 @@ body {
 .slider-properties {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 108px;
+  /* margin-top: 0; */
+  margin-bottom: 38px;
 }
 
 .slider-property {
+  margin: 0;
+
   font-size: 16px;
   line-height: 30px;
 }
@@ -434,7 +492,7 @@ body {
 }
 
 .catalog-navigation {
-  margin: 0 140px;
+  margin: 0 ;
   padding: 0;
   padding-bottom: 70px;
 }
