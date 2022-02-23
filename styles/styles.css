@@ -528,23 +528,18 @@ body {
 
 /* Доставка, гарантия и кредит начало */
 .terms-section {
-  display: flex;
-  align-items: center;
-  min-height: 319px;
-  /* padding: 0 0 72px; */
-  margin-top: 70px;
+  padding-bottom: 72px;
 
-  background-color: #f0f0f0;
+  background: linear-gradient(180deg, #ffffff 102px, #f0f0f0 102px 100%);
 }
 
 .terms-wrapper {
   display: flex;
-  /* min-height: 289px; */
+  padding: 0 140px;
 }
 
 .terms-buttons-wrapper {
   display: flex;
-  /* flex-basis: 319px; */
   flex-direction: column;
   width: 280px;
   margin-right: 116px;
@@ -555,7 +550,7 @@ body {
 
 .term-button {
   width: 160px;
-  height: 40px;
+  /* height: 80px; */
 }
 
 .term-button:not(:last-child) {
@@ -563,13 +558,15 @@ body {
 }
 
 .term-description-list {
-  /* width: 452px; */
+  padding: 72px 0;
 }
 
 .term-delievery-item {
 }
 
 .term-header {
+  margin-bottom: 34px;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 50px;
@@ -669,6 +666,8 @@ body {
 /* Универсальный стиль кнопки
 с желтой полосой */
 .button-yellow-line {
+  padding: 10px 0;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 18px;
