@@ -796,11 +796,11 @@ body {
 
 .catalog-breadcrumbs-list {
   display: flex;
-  margin-top: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .catalog-breadcrumbs-item {
-  max-width: 200px;
   margin-right: 36px;
 }
 
@@ -814,6 +814,8 @@ body {
 .catalog-main-wrapper {
   display: flex;
   padding: 0 140px;
+
+  background: #f0f0f0;
 }
 
 .catalog-filter-column {
@@ -894,7 +896,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px 20px 40px;
+  padding: 20px 40px;
 }
 
 .up-down-buttons-wrapper {
@@ -903,8 +905,6 @@ body {
 }
 
 .sorting-header-word {
-  max-width: 200px;
-
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -919,8 +919,8 @@ body {
 }
 
 .up-down-sorting {
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
 
   background-image: url(../images/catalog-page/up-triangle.svg);
   background-repeat: no-repeat;
@@ -977,8 +977,8 @@ body {
 .pagination-show-more {
   align-items: center;
   width: 760px;
-  height: 55px;
   margin-top: 44px;
+  padding: 15px;
 
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -995,7 +995,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 71px;
   margin-top: 44px;
 
   background: #ebebeb;
@@ -1003,9 +1002,8 @@ body {
 
 .pagination-list {
   display: flex;
-  align-items: center;
+  /* align-items: stretch; */
   margin: auto;
-  padding: 0;
 }
 
 .pagination-prev,
@@ -1024,10 +1022,6 @@ body {
 }
 
 .pagination-item {
-  width: 40px;
-  height: 40px;
-
-  text-align: center;
 }
 
 .pagination-prev {
@@ -1037,15 +1031,16 @@ body {
 }
 
 .pagination-link {
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding-top: 10px;
+  display: inline-block;
+  min-width: 40px;
 
   font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #444444;
   text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   opacity: 0.3;
 }
