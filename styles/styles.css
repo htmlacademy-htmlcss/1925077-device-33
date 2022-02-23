@@ -70,18 +70,24 @@ body {
   margin: 0;
 }
 
-/* Начало шапки страницы */
-.body-white-wrapper {
-  width: 1440px;
-  margin: 0 auto;
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.white-wrapper-with-padding {
+  padding: 0 140px;
 
   background-color: #ffffff;
 }
 
+/* Начало шапки страницы */
+.body-white-wrapper {
+
+}
+
 .page-header {
-  width: 1160px;
   margin: 0 auto;
-  padding: 0 60px;
 }
 
 .header-yellow-wrapper {
@@ -253,8 +259,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 /* Начало подвала страницы */
@@ -376,13 +380,10 @@ body {
 /* Конец подвала страницы */
 
 /* Начало главного содержимого главной страницы */
-.main-index {
-}
+
 
 .carousel-section {
   margin-top: -151px;
-  padding: 0;
-  /* padding-top: 85px; */
 }
 
 .carousel-section-wrapper {
@@ -390,8 +391,6 @@ body {
 }
 
 .carousel-main-image {
-  /* display: flex; */
-  /* align-items: center; */
   width: 560px;
   margin-right: 40px;
 }
@@ -400,15 +399,14 @@ body {
   position: absolute;
   z-index: 5;
   /* top: 50%; */
-  margin-top: 211px;
-  padding: 0;
+  margin-top: 161px;
+  padding: 50px;
 
   background-color: inherit;
-  border: none;
 }
 
 .slider-prev {
-  margin-left: 30px;
+  margin-left: -20px;
 }
 
 
@@ -421,18 +419,18 @@ body {
 }
 
 .slider-next {
-  margin-left: -20px;
+  margin-left: -70px;
 
   transform: scale(-1, 1);
 }
 
 .carousel-description {
-  width: 560px;
   align-self: flex-end;
+  width: 560px;
+  padding-bottom: 38px;
 }
 
 .slider-slogan {
-  /* margin-top: auto; */
   margin-bottom: 29px;
 
   font-family: "Raleway", sans-serif;
@@ -473,7 +471,7 @@ body {
 .slider-properties {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 38px;
+  margin: 0;
 }
 
 .slider-property {
@@ -489,6 +487,7 @@ body {
 }
 
 .catalog-navigation {
+  margin-top: 70px;
   padding-bottom: 70px;
 }
 
@@ -532,16 +531,20 @@ body {
   display: flex;
   align-items: center;
   min-height: 319px;
-  padding: 0 140px 72px;
+  /* padding: 0 0 72px; */
+  margin-top: 70px;
+
+  background-color: #f0f0f0;
 }
 
 .terms-wrapper {
   display: flex;
+  /* min-height: 289px; */
 }
 
 .terms-buttons-wrapper {
   display: flex;
-  flex-basis: 319px;
+  /* flex-basis: 319px; */
   flex-direction: column;
   width: 280px;
   margin-right: 116px;
@@ -560,7 +563,7 @@ body {
 }
 
 .term-description-list {
-  width: 452px;
+  /* width: 452px; */
 }
 
 .term-delievery-item {
@@ -591,9 +594,8 @@ body {
 .super-order-wrapper {
   /* сомневаюсь */
   display: table;
-  width: 1160px;
   height: 100px;
-  margin: 0 auto;
+  margin: 300px auto 0;
 
   background-color: #f0f0f0;
 }
@@ -887,7 +889,6 @@ body {
   font-weight: normal;
 
   background-color: inherit;
-  border: none;
 }
 
 .sorting-mini-wrapper {
