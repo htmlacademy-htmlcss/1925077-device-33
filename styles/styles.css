@@ -945,12 +945,15 @@ body {
 }
 
 .product-item {
+  display: flex;
+  flex-direction: column;
   width: 360px;
 }
 
 .name-and-price-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
 
 
@@ -959,6 +962,10 @@ body {
   line-height: 20px;
   color: inherit;
   letter-spacing: -0.02em;
+}
+
+.product-link {
+  height: 380px;
 }
 
 .product-img {
@@ -1033,14 +1040,14 @@ body {
 .pagination-link {
   display: inline-block;
   min-width: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #444444;
   text-decoration: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   opacity: 0.3;
 }
