@@ -98,12 +98,15 @@ body {
 }
 
 .page-logo {
-  display: inline-block;
+  display: block;
 }
 
 .page-logo-link {
   position: relative;
   bottom: 30px;
+
+  display: block;
+  width: 145px;
 }
 
 .header-first-row {
@@ -119,9 +122,31 @@ body {
   border-radius: 50px;
 }
 
+.search-input-label {
+  position: relative;
+}
+
+.search-input-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: auto auto auto 14px;
+
+  background-image: url("../images/header/search-glass.svg");
+  background-repeat: no-repeat;
+}
+
 .search-input {
-  width: 357px;
+  width: 309px;
   height: 36px;
+  margin-left: 44px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -234,32 +259,6 @@ body {
   margin-left: auto;
 }
 /* Конец шапки страницы */
-
-.index-main-yellow-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 113px;
-  margin: 0 auto;
-
-  background-color: #ffe17f;
-}
-
-.recommended-number {
-  margin-right: 49px;
-
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-size: 180px;
-  line-height: 30px;
-  font-weight: bold;
-  text-align: right;
-  color: #ffffff;
-}
-
-.main-container {
-  flex-grow: 1;
-}
 
 /* Начало подвала страницы */
 .page-footer {
@@ -383,6 +382,32 @@ body {
 
 /* Начало главного содержимого главной страницы */
 
+.index-main-yellow-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 113px;
+  margin: 0 auto;
+
+  background-color: #ffe17f;
+}
+
+.recommended-number {
+  margin-right: 49px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 180px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: right;
+  color: #ffffff;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 
 .carousel-section {
   margin-top: -151px;
@@ -399,8 +424,7 @@ body {
 
 .slider-button {
   position: absolute;
-  z-index: 5;
-  /* top: 50%; */
+
   margin-top: 161px;
   padding: 50px;
 
