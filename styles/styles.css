@@ -91,19 +91,19 @@ body {
 }
 
 .header-yellow-wrapper {
-  margin-top: -13px;
-  padding: 43px 60px 23px;
+  margin-top: 40px;
+  padding: 7px 60px 23px;
 
   background-color: #ffe17f;
 }
 
 .page-logo {
-  display: block;
-  margin-top: 18px;
-  margin-left: 60px;
+  display: inline-block;
 }
 
 .page-logo-link {
+  position: relative;
+  bottom: 30px;
 }
 
 .header-first-row {
@@ -372,6 +372,8 @@ body {
 .social-networks-link {
 }
 
+.footer-link-icon {}
+
 .footer-logo-html {
   width: 200px;
 
@@ -411,8 +413,7 @@ body {
 
 
 .slider-image {
-  position: relative;
-
+  display: inline-block;
   width: 560px;
   height: 560px;
   object-fit: contain;
@@ -965,10 +966,10 @@ body {
 }
 
 .product-link {
-  height: 380px;
 }
 
 .product-img {
+  display: block;
   object-fit: contain;
 }
 
