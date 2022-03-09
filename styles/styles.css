@@ -751,10 +751,38 @@ body {
 
 .term-button {
   width: 160px;
-  /* height: 80px; */
 }
 
-.term-button:not(:last-child) {
+.term-button.current {
+  color: #FFE17F;
+}
+
+.term-button.current::before {
+  background-color: #000000;
+}
+
+.term-button.button-yellow-line:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.term-button.button-yellow-line:active {
+  color: rgba(255, 225, 127, 0.3);
+}
+
+.term-button.button-yellow-line:hover::before,
+.term-button.button-yellow-line:active::before {
+  top: 0;
+
+  height: 100%;
+
+  background-color: #000000;
+}
+
+.term-item.current {
+  background-color: #000000;
+}
+
+.term-item:not(:last-child) {
   margin-bottom: 35px;
 }
 
@@ -868,7 +896,7 @@ body {
   position: relative;
   z-index: 0;
 
-  padding: 10px 40px;
+  padding: 10px 0;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -880,6 +908,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.carousel.button-yellow-line {
+  width: 220px;
 }
 
 .button-yellow-line::before {
@@ -895,7 +927,11 @@ body {
   background-color: #ffe17f;
 }
 
-.button-yellow-line:hover {
+.button-yellow-line:hover::before {
+  top: 0;
+
+  height: 100%;
+
   background-color: #ffe17f;
 }
 

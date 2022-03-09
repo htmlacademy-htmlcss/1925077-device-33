@@ -94,7 +94,7 @@
               камеру.
             </p>
             <div class="carousel-buttons-wrapper">
-              <a href="#" class="button-yellow-line focus">Подробнее</a>
+              <a href="#" class="button-yellow-line focus carousel">Подробнее</a>
               <div class="like-radio-wrapper">
                 <button type="button" class="like-radio current-like-radio focus"
                   aria-label="Первый рекомендованный товар."></button>
@@ -157,17 +157,23 @@
       <div class="">
         <h2 class="visually-hidden">Кратко о доставке, гарантии и кредите</h2>
         <div class="terms-wrapper">
-          <div class="terms-buttons-wrapper">
-            <button class="button-yellow-line term-button button" type="button" id="termBtn1">
-              Доставка
-            </button>
-            <button class="button-yellow-line term-button button" type="button" id="termBtn2">
-              Гарантия
-            </button>
-            <button class="button-yellow-line term-button button" type="button" id="termBtn3">
-              Кредит
-            </button>
-          </div>
+          <ul class="terms-buttons-wrapper reset-list">
+            <li class="reset-margin term-item current">
+              <a class="button-yellow-line term-button button current" type="button" id="termBtn1">
+                Доставка
+              </a>
+            </li>
+            <li class="reset-margin term-item">
+              <a class="button-yellow-line term-button button" type="button" id="termBtn2">
+                Гарантия
+              </a>
+            </li>
+            <li class="reset-margin term-item">
+              <a class="button-yellow-line term-button button" type="button" id="termBtn3">
+                Кредит
+              </a>
+            </li>
+          </ul>
           <ol class="term-description-list reset-list">
             <li class="term-delievery-item reset-margin">
               <h3 class="term-header reset-margin">Доставка</h3>
