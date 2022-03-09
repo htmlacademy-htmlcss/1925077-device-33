@@ -750,8 +750,9 @@ body {
 }
 
 .term-button {
-  width: 160px;
   position: relative;
+
+  width: 160px;
 }
 
 .term-button.current {
@@ -825,6 +826,8 @@ body {
 }
 
 .super-order-link {
+  position: relative;
+
   display: block;
   padding: 40px;
 
@@ -840,6 +843,26 @@ body {
   letter-spacing: 0.2em;
 
   background: #f0f0f0;
+}
+
+.super-order-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 125px;
+  height: 100%;
+
+  background: #ffe17f url("../images/index-page/deliever-car.svg") center no-repeat;
+}
+
+.super-order-link:hover::before {
+  background-color: #FFC700;
+}
+
+.super-order-link:active {
+  opacity: 0.3;
 }
 
 .about-and-contacts-wrapper {
