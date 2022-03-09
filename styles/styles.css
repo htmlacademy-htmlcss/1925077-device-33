@@ -318,8 +318,34 @@ body {
 }
 
 .product-catalog-select {
+  position: relative;
+
+  display: flex;
   width: 293px;
   margin-right: auto;
+  justify-items: center;
+}
+
+.product-catalog-select::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 46px;
+  height: 46px;
+
+  background-image: url("../images/header/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: #000000 2px solid;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.product-catalog-select:hover::after {
+  background-image: url("../images/header/minus.svg");
+  opacity: 1;
 }
 
 .header-navigation {
