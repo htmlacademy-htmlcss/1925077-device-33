@@ -403,32 +403,34 @@ body {
   background: #444444;
 }
 
-.footer-device-logo {
+.page-logo-link.footer {
+  position: static;
 }
 
 .footer-first-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 35px;
 }
 
 .footer-address {
-  width: 250px;
-
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
 }
 
 .footer-yellow-line {
-  width: 250px;
+  width: 80px;
+  background: #FFC700;
+  height: 7px;
 }
 
 .footer-direction {
 }
 
 .footer-navigation {
+  margin-left: 112px;
+  margin-right: auto;
 }
 
 .footer-navigation-list {
@@ -482,6 +484,7 @@ body {
 
   text-align: right;
   color: inherit;
+  margin-left: auto;
 }
 
 .footer-phone:hover {
@@ -496,6 +499,7 @@ body {
 }
 
 .social-networks-section {
+  margin-left: 40px;
 }
 
 .social-networks-list {
