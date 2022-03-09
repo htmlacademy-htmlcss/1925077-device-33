@@ -751,10 +751,11 @@ body {
 
 .term-button {
   width: 160px;
+  position: relative;
 }
 
 .term-button.current {
-  color: #FFE17F;
+  color: #ffe17f;
 }
 
 .term-button.current::before {
