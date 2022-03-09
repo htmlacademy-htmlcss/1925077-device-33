@@ -663,8 +663,6 @@ body {
   display: flex;
   flex-direction: column-reverse;
   width: 160px;
-
-  background-color: #ffe17f;
 }
 
 .catalog-navigation-link {
@@ -678,6 +676,47 @@ body {
   color: inherit;
   text-decoration: none;
   letter-spacing: -0.02em;
+}
+
+.catalog-navigation-link::before {
+  content: "";
+
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 30px;
+
+  background-color: #ffe17f;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-navigation-link:hover::before {
+  background-color: #ffc700;
+}
+
+.catalog-navigation-link-1::before {
+  background-image: url("../images/index-page/categories/categorie-1.svg");
+}
+
+.catalog-navigation-link-2::before {
+  background-image: url("../images/index-page/categories/categorie-2.svg");
+}
+
+.catalog-navigation-link-3::before {
+  background-image: url("../images/index-page/categories/categorie-3.svg");
+}
+
+.catalog-navigation-link-4::before {
+  background-image: url("../images/index-page/categories/categorie-4.svg");
+}
+
+.catalog-navigation-link-5::before {
+  background-image: url("../images/index-page/categories/categorie-5.svg");
+}
+
+.catalog-navigation-link-6::before {
+  background-image: url("../images/index-page/categories/categorie-6.svg");
 }
 
 .catalog-navigation-category {
