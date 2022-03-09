@@ -767,7 +767,7 @@ body {
   display: block;
   width: 160px;
   height: 160px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   background-color: #ffe17f;
   background-repeat: no-repeat;
@@ -826,7 +826,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-right: 116px;
+  margin: 0;
   padding: 65px 0;
 
   border-right: #000000 7px solid;
@@ -872,11 +872,10 @@ body {
 }
 
 .term-description-list {
-  padding: 72px 0;
+  padding: 72px 0 64px 116px;
 }
 
 .term-delievery-item {
-  display: flex;
 }
 
 .term-header {
@@ -889,13 +888,26 @@ body {
   font-weight: 800;
 }
 
-.term-icon {
-  width: 340px;
-
-  background: url("../images/index-page/deliever.svg") no-repeat center;
+.term-text {
+  position: relative;
 }
 
-.term-text-1 {
+.term-text::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 558px;
+
+  display: block;
+
+  background-repeat: no-repeat;
+}
+
+.term-text-1::after {
+  width: 135px;
+  height: 165px;
+
+  background: url("../images/index-page/deliever.svg") no-repeat;
 }
 /* Доставка, гарантия и кредит конец */
 
