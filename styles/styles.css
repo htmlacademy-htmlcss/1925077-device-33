@@ -611,9 +611,19 @@ body {
 }
 
 .like-radio {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 16px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: #000000 2px solid;
+  border-radius: 50%;
 }
 
 .current-like-radio {
+  background-color: #000000;
 }
 
 .meaning-property-wrapper {
@@ -816,7 +826,10 @@ body {
 /* Универсальный стиль кнопки
 с желтой полосой */
 .button-yellow-line {
-  padding: 10px 0;
+  position: relative;
+  z-index: 0;
+
+  padding: 10px 40px;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -828,6 +841,31 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+
+.button-yellow-line::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 8px;
+
+  background-color: #ffe17f;
+}
+
+.button-yellow-line:hover {
+  background-color: #ffe17f;
+}
+
+.button-yellow-line:active::before {
+  top: 0;
+
+  height: 100%;
+
+  background-color: #ffcc33;
 }
 
 .contacts {
