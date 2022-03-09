@@ -262,7 +262,14 @@ body {
   position: relative;
 
   display: flex;
-  margin-left: 28px;
+  margin-left: 13px;
+  padding-left: 15px;
+}
+
+.shopcart-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  opacity: 1;
 }
 
 .compare-link::before {
@@ -290,7 +297,7 @@ body {
 .shopcart-link::after {
   content: "2";
   position: absolute;
-  left: -15px;
+  left: 0;
 
   display: flex;
   justify-content: center;
