@@ -793,6 +793,7 @@ body {
 }
 
 .term-delievery-item {
+  display: flex;
 }
 
 .term-header {
@@ -803,6 +804,12 @@ body {
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
+}
+
+.term-icon {
+  width: 340px;
+
+  background: url("../images/index-page/deliever.svg") no-repeat center;
 }
 
 .term-text-1 {
@@ -858,7 +865,7 @@ body {
 }
 
 .super-order-link:hover::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .super-order-link:active {
@@ -888,7 +895,8 @@ body {
 }
 
 .about-and-contacts-text {
-  padding: 0 0 30px;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .about-list {
@@ -907,7 +915,7 @@ body {
 }
 
 .about-and-contacts-h3 {
-  margin: 0 0 15px;
+  margin: 30px 0 15px;
 
   font-size: 24px;
   line-height: 30px;
@@ -920,6 +928,7 @@ body {
   position: relative;
   z-index: 0;
 
+  display: inline-block;
   padding: 10px 0;
 
   font-family: "Raleway", sans-serif;
@@ -965,6 +974,15 @@ body {
   height: 100%;
 
   background-color: #ffcc33;
+}
+
+.button-yellow-line.width270 {
+  width: 270px;
+}
+
+.button-yellow-line.width260 {
+  width: 260px;
+  margin-top: 30px;
 }
 
 .contacts {
@@ -1059,9 +1077,22 @@ body {
 }
 
 .this-free {
+  display: flex;
+  justify-content: space-between;
   width: 160px;
 
   text-align: left;
+}
+
+.this-free::before {
+  content: "";
+
+  display: block;
+  align-self: center;
+  width: 14px;
+  height: 14px;
+
+  background: url("../images/index-page/green-check.svg") no-repeat;
 }
 /* Конец главного содержимого главной страницы */
 
