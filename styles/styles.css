@@ -146,12 +146,11 @@ body {
   height: 16px;
   margin: auto auto auto 14px;
 
-  background-image: url("../images/header/search-glass.svg");
-  background-repeat: no-repeat;
+  background: url("../images/header/search-glass.svg") no-repeat center;
 }
 
 .search-input {
-  width: 309px;
+  width: 355px;
   height: 36px;
   padding-left: 44px;
 
@@ -163,8 +162,18 @@ body {
   color: inherit;
 
   background-color: inherit;
-  border: 2px solid #000000;
+  border: none;
+}
+
+.search-input-border {
+  border: #000000 2px solid;
   border-radius: 50px 0 0 50px;
+}
+
+.search-button-border {
+  border: #000000 2px solid;
+  border-left: none;
+  border-radius: 0 50px 50px 0;
 }
 
 /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -185,15 +194,19 @@ body {
   font-weight: normal;
 
   background-color: inherit;
-  border: 2px solid #000000;
-  border-left: none;
-  border-radius: 0 50px 50px 0;
 }
 
 .search-button:hover {
   color: #ffffff;
 
   background-color: #000000;
+  border-radius: 0 50px 50px 0;
+}
+
+.search-input:focus,
+.search-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
 
 .search-button:active span {
