@@ -421,16 +421,17 @@ body {
 
 .footer-yellow-line {
   width: 80px;
-  background: #FFC700;
   height: 7px;
+
+  background: #ffc700;
 }
 
 .footer-direction {
 }
 
 .footer-navigation {
-  margin-left: 112px;
   margin-right: auto;
+  margin-left: 112px;
 }
 
 .footer-navigation-list {
@@ -481,10 +482,10 @@ body {
 
 .footer-phone {
   width: 200px;
+  margin-left: auto;
 
   text-align: right;
   color: inherit;
-  margin-left: auto;
 }
 
 .footer-phone:hover {
@@ -818,7 +819,7 @@ body {
 .terms-section {
   padding-bottom: 72px;
 
-  background: linear-gradient(180deg, #ffffff 102px, #f0f0f0 102px 100%);
+  background: linear-gradient(#ffffff, 102px, #f0f0f0 102px);
 }
 
 .terms-wrapper {
@@ -1220,7 +1221,23 @@ body {
 }
 
 .catalog-breadcrumbs-item {
+  position: relative;
+
+  display: flex;
   margin-right: 36px;
+}
+
+.catalog-breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -20px;
+
+  width: 4px;
+  height: 7px;
+
+  background: url("../images/catalog-page/crumb.svg") no-repeat center;
+  opacity: 0.3;
 }
 
 .catalog-breadcrumbs-link {
