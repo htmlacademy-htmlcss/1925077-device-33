@@ -602,7 +602,7 @@ body {
 }
 
 .footer-academy-svg:hover {
-  fill: #f0f0f0;
+  fill: #ffffff;
 }
 /* Конец подвала страницы */
 
@@ -1324,10 +1324,60 @@ body {
 }
 
 .control-label {
+  position: relative;
+
+  padding-left: 36px;
 }
 
 .filter-checkbox {
+  position: absolute;
+  appearance: none;
 }
+
+.checkbox {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+  margin-left: -36px;
+
+  background-color: inherit;
+  border: #cccccc solid 2px;
+  border-radius: 3px;
+}
+
+.for-focus {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+  margin-left: -34px;
+  top: 2px;
+}
+
+
+.filter-checkbox:checked + .checkbox {
+  background: url("../images/catalog-page/check.svg") no-repeat center;
+  border-color: #000000;
+}
+
+.filter-checkbox:disabled + .checkbox {
+  border-color: #000000;
+  opacity: 0.1;
+}
+
+.filter-checkbox:disabled + .checkbox + .input-description {
+  opacity: 0.1;
+}
+
+.filter-checkbox:focus + .checkbox + .for-focus {
+  z-index: 99;
+
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
+  opacity: 1;
+}
+
 
 .w220 {
   width: 220px;
