@@ -1294,12 +1294,13 @@ body {
 
 .catalog-filter-group {
   border: none;
+  padding: 0;
 }
 
 .catalog-filter-wrapper {
   width: 200px;
-  margin-top: 35px;
-  padding: 12px 0 39px;
+  margin-bottom: 35px;
+  padding: 12px 0 0;
 
   border-top: 2px solid #000000;
 }
@@ -1321,6 +1322,10 @@ body {
 
   font-size: 16px;
   line-height: 19px;
+}
+
+.catalog-filter-item:last-child {
+  margin: 0;
 }
 
 .control-label {
@@ -1371,14 +1376,6 @@ body {
   outline-offset: -6px;
   opacity: 1;
 }
-
-/* .input-appearance:checked + .checkbox.radio::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #000000;
-  top: 2px;
-} */
 
 .input-appearance:disabled + .checkbox {
   border-color: #000000;
