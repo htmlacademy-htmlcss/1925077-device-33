@@ -560,7 +560,6 @@ body {
 .social-networks-link::after {
   content: "";
   position: absolute;
-  z-index: 0;
 
   display: block;
   width: 100%;
@@ -1710,3 +1709,126 @@ body {
 }
 /* Конец главного содержимого страницы Каталог */
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(240, 240, 240, 0.9);
+}
+
+.modal-container-close {
+  /* display: none; */
+}
+
+.modal {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  padding: 62px 70px;
+
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-order {
+  width: 760px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 74px;
+  right: 70px;
+
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  background-color: #ffffff;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 42px;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.modal-row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+  margin-bottom: 42px;
+}
+
+.modal-input {
+  padding: 18px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  background: #f0f0f0;
+  border: 2px solid #f0f0f0;
+}
+
+.modal-row-flex .modal-input {
+  width: 320px;
+}
+
+.modal-row-flex.second .modal-input {
+  width: 540px;
+}
+
+.modal-label {
+  margin-bottom: 14px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.input-error {
+  margin: 0;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff3d3d;
+}
+
+.modal-form .button-yellow-line.button {
+  width: 200px;
+
+  background-color: inherit;
+}
+
+.error-border {
+  border-color: #ff3d3d;
+}
