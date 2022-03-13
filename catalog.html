@@ -113,10 +113,11 @@
 
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label" style="left: 0; transform: translate(-50%)"> от
-                    <input class="range-input" type="number" value="0" name="min-price">
+                    <input class="range-input focus" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label" style="right: 72px; transform: translate(50%)">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 48px;;">
+                    до <input class="range-input focus" type="number" value="5000" name="max-price"
+                      style="width: 48px;;">
                   </label>
                 </div>
               </div>
@@ -212,6 +213,7 @@
           </label>
           <select class="sorting-select button hover-06 active-03 focus" id="sorting-select">
             <option value="popular">Популярные</option>
+            <option value="popular">По цене</option>
           </select>
           <div class="up-down-buttons-wrapper">
             <button class="up-down-sorting button focus" type="button" aria-label="По возрастанию">

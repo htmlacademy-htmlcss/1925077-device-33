@@ -1380,6 +1380,7 @@ body {
 
 .range-wrapper-inputs {
   position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -1390,6 +1391,7 @@ body {
 
 .catalog-filter-label {
   position: absolute;
+
   display: flex;
 
   font: inherit;
@@ -1509,6 +1511,7 @@ body {
 
 .sorting-select {
   width: 160px;
+  padding-right: 50px;
 
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -1516,7 +1519,9 @@ body {
   line-height: 30px;
   font-weight: normal;
 
+  background: url("../images/catalog-page/sort.svg") no-repeat right 12px center;
   background-color: inherit;
+  appearance: none;
 }
 
 .sorting-mini-wrapper {
