@@ -76,13 +76,15 @@
         <h2 class="visually-hidden">Несколько рекомендованных товаров</h2>
         <div class="carousel-section-wrapper">
           <div class="carousel-main-image">
-            <button class="slider-button slider-prev button" type="button" aria-label="Предыдущее фото.">
+            <button class="slider-button slider-prev button hover-06 active-03" type="button"
+              aria-label="Предыдущее фото.">
               <img src="../images/index-page/slider-button.svg" alt="Предыдущее фото." width="20" height="60">
             </button>
-            <!-- Стоит поработать над размером картинки -->
+
             <img class="slider-image reset-margin" src="images/index-page/slider/slider-copter.png"
               alt="Квадрокоптер с мощным лазером" width="560" height="560">
-            <button class="slider-button slider-next button" type="button" aria-label="Следующее фото.">
+            <button class="slider-button slider-next button hover-06 active-03" type="button"
+              aria-label="Следующее фото.">
               <img src="../images/index-page/slider-button.svg" alt="Следующее фото." width="20" height="60">
             </button>
           </div>
@@ -97,12 +99,20 @@
             </p>
             <div class="carousel-buttons-wrapper">
               <a href="#" class="button-yellow-line focus carousel">Подробнее</a>
-              <div class="like-radio-wrapper">
-                <button type="button" class="like-radio current-like-radio focus"
-                  aria-label="Первый рекомендованный товар."></button>
-                <button type="button" class="like-radio focus" aria-label="Первый рекомендованный товар."></button>
-                <button type="button" class="like-radio focus" aria-label="Первый рекомендованный товар."></button>
-              </div>
+              <ol class="reset-list">
+                <li class="like-radio-for-focus">
+                  <button type="button" class="button like-radio current-like-radio hover-06 active-03"><span
+                      class="visually-hidden">Первый рекомендованный товар.</span></button>
+                </li>
+                <li class="like-radio-for-focus">
+                  <button type="button" class="button like-radio hover-06 active-03"><span
+                      class="visually-hidden">Второй рекомендованный товар.</span></button>
+                </li>
+                <li class="like-radio-for-focus">
+                  <button type="button" class="button like-radio hover-06 active-03"><span
+                      class="visually-hidden">Третий рекомендованный товар.</span></button>
+                </li>
+              </ol>
             </div>
             <dl class="slider-properties">
               <div class=" meaning-property-wrapper">

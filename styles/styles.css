@@ -707,24 +707,38 @@ body {
 
 .carousel-buttons-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 40px;
   margin-bottom: 49px;
 }
 
-.like-radio-wrapper {
-}
+.like-radio-for-focus {
+  position: relative;
 
-.like-radio {
   display: inline-block;
   width: 12px;
   height: 12px;
-  margin-left: 16px;
+  margin: 0 0 0 16px;
+  padding: 0;
+}
+
+.like-radio {
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+  margin: 0;
   padding: 0;
 
   background-color: #ffffff;
   border: #000000 2px solid;
   border-radius: 50%;
+}
+
+.like-radio-for-focus:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .current-like-radio {
@@ -1293,8 +1307,9 @@ body {
 }
 
 .catalog-filter-group {
-  border: none;
   padding: 0;
+
+  border: none;
 }
 
 .catalog-filter-wrapper {
