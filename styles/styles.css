@@ -1329,6 +1329,95 @@ body {
   letter-spacing: -0.02em;
 }
 
+.range {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.range-scale {
+  position: relative;
+
+  height: 2px;
+  margin-bottom: 11px;
+
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  background: #f0f0f0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: 50%;
+  left: -9px;
+
+  transform: translate(0, -50%);
+}
+
+.toggle-max {
+  top: 50%;
+  right: -9px;
+
+  transform: translate(0, -50%);
+}
+
+.range-wrapper-inputs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  font: inherit;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.catalog-filter-label {
+  position: absolute;
+  display: flex;
+
+  font: inherit;
+  font-size: 15px;
+  line-height: 18px;
+
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 12px;
+  padding: 0 2px;
+
+  font: inherit;
+  text-align: center;
+
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+
+  margin: 0;
+}
+
 .catalog-filter-list {
 }
 
