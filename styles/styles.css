@@ -1723,7 +1723,7 @@ body {
   background: rgba(240, 240, 240, 0.9);
 }
 
-.modal-container-close {
+.display-none-selector {
   display: none;
 }
 
@@ -1845,6 +1845,7 @@ body {
   margin: 0;
 
   background: #f0f0f0;
+  justify-content: start;
 }
 
 .modal-minus-button::before {
@@ -1904,7 +1905,8 @@ body {
 
   background-color: transparent;
   border: none;
-  appearance: none;
+  appearance: textfield;
+
   cursor: pointer;
 }
 
@@ -1929,12 +1931,14 @@ body {
 
 .info-tooltip-button {
   position: absolute;
+  top: -3px;
+
   display: inline-block;
   width: 26px;
-  top: -3px;
   height: 26px;
   margin-left: 8px;
-  background-color: #FFE17F;
+
+  background-color: #ffe17f;
   border-radius: 50%;
 }
 
@@ -1942,9 +1946,10 @@ body {
   content: "";
   position: absolute;
 
-  background:  url("../images/info.svg") no-repeat 50% 50%;
   width: 2px;
   height: 12px;
+
+  background: url("../images/info.svg") no-repeat 50% 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -1952,7 +1957,54 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 }
-/* Модальное окно на главной странице Конец */
+
+.modal-tooltip-text {
+  position: absolute;
+  top: 20px;
+  right: -34px;
+  z-index: 1;
+
+  width: 164px;
+  padding: 19px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+
+  background-color: #000000;
 }
+
+.modal-tooltip-text::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 40px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.info-tooltip-button:hover > .modal-tooltip-text  {
+  display: block;
+}
+
+.info-tooltip-button:focus > .modal-tooltip-text {
+  display: block;
+}
+
+.info-tooltip-button:focus {
+  outline: none;
+}
+
+.modal-unit {
+  margin-bottom: 42px;
+}
+/* Модальное окно на главной странице Конец */
+
