@@ -1709,6 +1709,7 @@ body {
 }
 /* Конец главного содержимого страницы Каталог */
 
+/* Модальное окно на главной странице начало */
 .modal-container {
   position: fixed;
   top: 0;
@@ -1776,6 +1777,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   width: 760px;
   margin-bottom: 42px;
 }
@@ -1798,7 +1800,7 @@ body {
 }
 
 .modal-row-flex.second .modal-input {
-  width: 540px;
+  width: 500px;
 }
 
 .modal-label {
@@ -1832,3 +1834,95 @@ body {
 .error-border {
   border-color: #ff3d3d;
 }
+
+.modal-number-wrapper {
+  position: relative;
+
+  display: flex;
+  min-width: 180px;
+  margin: 0;
+
+  background: #f0f0f0;
+}
+
+.modal-minus-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #000000;
+  transform: translateY(-50%);
+}
+
+.modal-plus-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #000000;
+  transform: translateY(-50%);
+}
+
+.modal-plus-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+
+  width: 16px;
+  height: 2px;
+
+  background-color: #000000;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.modal-minus-button,
+.modal-plus-button {
+  width: 60px;
+  height: 60px;
+}
+
+.modal-number {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+
+
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+
+.modal-number::-webkit-outer-spin-button,
+.modal-number::-webkit-inner-spin-button {
+  appearance: none;
+
+  margin: 0;
+}
+
+.modal-input:hover,
+.modal-minus-button:hover,
+.modal-number:hover,
+.modal-plus-button:hover {
+  background-color: #ebebeb;
+}
+
+.modal-input:active,
+.modal-minus-button:active,
+.modal-number:active,
+.modal-plus-button:active {
+  background-color: #dcdcdc;
+}
+/* Модальное окно на главной странице Конец */
