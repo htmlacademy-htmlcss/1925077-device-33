@@ -38,9 +38,51 @@
             <a href="#" class="compare-link focus hover-06 active-03">
               Сравнить
             </a>
-            <a href="#" class="shopcart-link hover-06 active-03">
-              Корзина
-            </a>
+            <div class="shopcart-wrapper">
+              <a href="#" class="shopcart-link hover-06 active-03">
+                Корзина
+              </a>
+
+              <div class="popover-cart">
+                <ul class="reset-list popover-cart-list">
+                  <li class="popover-cart-item">
+                    <a href="#" class="popover-cart-link  hover-06 active-03 focus">
+                      <img src="images/catalog-page/products/product(1).jpg" alt="Фото товара Любительская селфи-палка."
+                        width="39" height="43" class="popover-cart-image">
+                      <span>Любительская селфи-палка</span>
+                      <button class="popover-cart-button-delete hover-06 active-03 focus" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </a>
+                  </li>
+                  <li class="popover-cart-item">
+                    <a href="#" class="popover-cart-link  hover-06 active-03 focus">
+                      <img src="images/catalog-page/products/product(2).jpg"
+                        alt="Фото товара Профессиональная селфи-палка." width="39" height="43"
+                        class="popover-cart-image">
+                      <span>Профессиональная селфи-палка</span>
+                      <button class="popover-cart-button-delete hover-06 active-03 focus" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="popover-cart-total">
+                  <span>Товаров:
+                    <span id="popover-cart-counter">2</span>
+                  </span>
+
+                  <span>Сумма:
+                    <span id="popover-cart-total-price">2000</span> ₽
+                  </span>
+                </div>
+
+                <a href="#" class="popover-cart-link-open hover-06 active-03 focus">Открыть корзину</a>
+
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="header-second-row">
@@ -338,7 +380,7 @@
   </footer>
 
   <!-- Удаления класса display-none-selector покажет модальное окно -->
-  <div class="modal-container ">
+  <div class="modal-container display-none-selector">
     <div class="modal modal-order">
       <button class="modal-close-button hover-06 active-03 focus">
         <span class="visually-hidden">Закрыть</span>

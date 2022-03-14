@@ -2010,3 +2010,142 @@ body {
 }
 /* Модальное окно на главной странице Конец */
 
+/* Поповер корзины начало */
+.shopcart-wrapper {
+  position: relative;
+}
+
+.popover-cart {
+  position: absolute;
+  left: -110px;
+
+  display: none;
+  width: 320px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.popover-cart-list {
+}
+
+.popover-cart-item {
+  padding: 20px;
+}
+
+.popover-cart-link {
+  display: flex;
+  align-items: flex-start;
+  min-height: 43px;
+
+  text-decoration: none;
+}
+
+.popover-cart-link > span {
+  margin-left: 23px;
+}
+
+.popover-cart-image {
+  display: block;
+}
+
+.popover-cart-button-delete {
+  position: relative;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  padding: 0;
+
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.popover-cart-button-delete::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 13px;
+  height: 2px;
+
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popover-cart-button-delete::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 13px;
+  height: 2px;
+
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popover-cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+
+  background: #1a1a1a;
+}
+
+.popover-cart-link-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  margin: 20px;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+
+  background-color: #ffffff;
+}
+
+.popover-cart-link-open:visited {
+  color: #000000;
+}
+
+.popover-cart-link:visited {
+  color: #ffffff;
+}
+
+.popover-cart::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 160px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.shopcart-wrapper:focus-within > .popover-cart {
+  display: block;
+}
+
+.shopcart-wrapper:hover > .popover-cart {
+  display: block;
+}
+/* Поповер корзины конец */
