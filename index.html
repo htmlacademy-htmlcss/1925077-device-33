@@ -19,10 +19,10 @@
         <div class="header-first-row">
           <form class="search-tandem" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-input-label">
-              <div class="search-input-border">
+              <span class="search-input-border">
                 <input type="search" class="search-input" placeholder="Текст поиска" autocomplete="on"
                   name="search-input">
-              </div>
+              </span>
             </label>
             <div class="search-button-border"><button class="search-button button"><span>Найти</span></button></div>
           </form>
@@ -171,17 +171,17 @@
         <div class="terms-wrapper">
           <ul class="terms-buttons-wrapper reset-list">
             <li class="reset-margin term-item current">
-              <a class="button-yellow-line term-button button focus current" type="button" id="termBtn1" href="#">
+              <a class="button-yellow-line term-button button focus current" href="#">
                 Доставка
               </a>
             </li>
             <li class="reset-margin term-item">
-              <a class="button-yellow-line term-button button focus" type="button" id="termBtn2" href="#">
+              <a class="button-yellow-line term-button button focus" href="#">
                 Гарантия
               </a>
             </li>
             <li class="reset-margin term-item">
-              <a class="button-yellow-line term-button button focus" type="button" id="termBtn3" href="#">
+              <a class="button-yellow-line term-button button focus" href="#">
                 Кредит
               </a>
             </li>
@@ -347,32 +347,32 @@
         <h2 class="modal-title">Доставка под заказ</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-row-flex">
-            <label>
+            <div>
               <div class="modal-label">Ваше имя:</div>
               <input class="modal-input focus" type="text" id="modal-name" name="modal-name" placeholder="Введите имя">
-            </label>
-            <label>
+            </div>
+            <div>
               <div class="modal-label">Ваш e-mail:</div>
               <input class="modal-input error-border focus" type="email" id="modal-email" name="modal-email"
                 placeholder="Ваш e-mail" value="почта">
               <p class="input-error">Забавный у вас адрес</p>
-            </label>
+            </div>
           </div>
 
           <div class="modal-row-flex second">
-            <label class="modal-unit">
+            <div class="modal-unit">
               <div class="modal-label">Что нужно привезти:</div>
               <input class="modal-input focus" type="text" id="modal-request" name="modal-request"
                 placeholder="В свободной форме">
-            </label>
+            </div>
 
             <div>
               <div class="modal-label">Количество:
                 <button class="info-tooltip-button button" type="button">
                   <span class="visually-hidden">Иформация о количестве доставляемого товара.</span>
-                  <p class="modal-tooltip-text display-none-selector">
+                  <span class="modal-tooltip-text display-none-selector">
                     Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
-                  </p>
+                  </span>
                 </button>
               </div>
               <div class="modal-number-wrapper">

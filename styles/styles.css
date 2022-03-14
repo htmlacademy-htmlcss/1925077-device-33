@@ -183,6 +183,8 @@ body {
 }
 
 .search-input-border {
+  display: block;
+
   border: #000000 2px solid;
   border-radius: 50px 0 0 50px;
 }
@@ -1841,11 +1843,11 @@ body {
   position: relative;
 
   display: flex;
+  justify-content: start;
   min-width: 180px;
   margin: 0;
 
   background: #f0f0f0;
-  justify-content: start;
 }
 
 .modal-minus-button::before {
@@ -1963,7 +1965,7 @@ body {
 
 .modal-tooltip-text {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: -34px;
   z-index: 1;
 
@@ -1991,7 +1993,7 @@ body {
   transform: rotate(45deg);
 }
 
-.info-tooltip-button:hover > .modal-tooltip-text  {
+.info-tooltip-button:hover > .modal-tooltip-text {
   display: block;
 }
 
