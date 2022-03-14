@@ -1804,6 +1804,8 @@ body {
 }
 
 .modal-label {
+  position: relative;
+
   margin-bottom: 14px;
 
   font-family: "Rubik", sans-serif;
@@ -1903,6 +1905,7 @@ body {
   background-color: transparent;
   border: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .modal-number::-webkit-outer-spin-button,
@@ -1912,17 +1915,44 @@ body {
   margin: 0;
 }
 
-.modal-input:hover,
 .modal-minus-button:hover,
-.modal-number:hover,
-.modal-plus-button:hover {
+.modal-plus-button:hover,
+.modal-number:hover {
   background-color: #ebebeb;
 }
 
-.modal-input:active,
 .modal-minus-button:active,
-.modal-number:active,
-.modal-plus-button:active {
+.modal-plus-button:active,
+.modal-number:active {
   background-color: #dcdcdc;
 }
+
+.info-tooltip-button {
+  position: absolute;
+  display: inline-block;
+  width: 26px;
+  top: -3px;
+  height: 26px;
+  margin-left: 8px;
+  background-color: #FFE17F;
+  border-radius: 50%;
+}
+
+.info-tooltip-button::before {
+  content: "";
+  position: absolute;
+
+  background:  url("../images/info.svg") no-repeat 50% 50%;
+  width: 2px;
+  height: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.info-tooltip-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Модальное окно на главной странице Конец */
+}

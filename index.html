@@ -367,11 +367,19 @@
             </label>
 
             <label>
-              <div class="modal-label">Количество:</div>
+              <div class="modal-label">Количество:
+                <button class="info-tooltip-button button" type="button">
+                  <span class="visually-hidden">Иформация о количестве доставляемого товара.</span>
+                </button>
+              </div>
               <div class="modal-number-wrapper">
-                <button class="modal-minus-button button focus" type="button"></button>
+                <button class="modal-minus-button button focus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                </button>
                 <input type="number" class="modal-number focus" min="0" value="1">
-                <button class="modal-plus-button button focus" type="button"></button>
+                <button class="modal-plus-button button focus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                </button>
               </div>
             </label>
           </div>
