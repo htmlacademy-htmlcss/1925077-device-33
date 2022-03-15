@@ -1882,6 +1882,32 @@ body {
   border: 2px solid #f0f0f0;
 }
 
+.input-wrapper-name,
+.input-wrapper-email {
+  position: relative;
+}
+
+.input-wrapper-name::after,
+.input-wrapper-email::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 21px;
+
+  width: 13px;
+  height: 12px;
+
+  background: url("../images/index-page/modal/user-icon.svg")  no-repeat;
+  transform: translate(0, -50%);
+}
+
+.input-wrapper-email::after {
+  width: 15px;
+  height: 12px;
+
+  background-image: url("../images/index-page/modal/letter-icon.svg");
+}
+
 .modal-row-flex .modal-input {
   width: 320px;
 }

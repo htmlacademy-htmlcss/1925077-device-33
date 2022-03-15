@@ -413,7 +413,7 @@
   </footer>
 
   <!-- Удаления класса display-none-selector покажет модальное окно -->
-  <div class="modal-container display-none-selector">
+  <div class="modal-container ">
     <div class="modal modal-order">
       <button class="modal-close-button hover-06 active-03 focus">
         <span class="visually-hidden">Закрыть</span>
@@ -424,12 +424,19 @@
           <div class="modal-row-flex">
             <div>
               <div class="modal-label">Ваше имя:</div>
-              <input class="modal-input focus" type="text" id="modal-name" name="modal-name" placeholder="Введите имя">
+              <div class="input-wrapper-name">
+                <input class="modal-input focus" type="text" id="modal-name" name="modal-name"
+                  placeholder="Введите имя">
+              </div>
             </div>
             <div>
               <div class="modal-label">Ваш e-mail:</div>
-              <input class="modal-input error-border focus" type="email" id="modal-email" name="modal-email"
-                placeholder="Ваш e-mail" value="почта">
+
+              <div class="input-wrapper-email">
+                <input class="modal-input error-border focus" type="email" id="modal-email" name="modal-email"
+                  placeholder="Ваш e-mail" value="почта">
+              </div>
+
               <p class="input-error">Забавный у вас адрес</p>
             </div>
           </div>
