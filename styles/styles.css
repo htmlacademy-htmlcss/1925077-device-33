@@ -357,6 +357,10 @@ body {
   margin-right: auto;
 }
 
+.product-catalog-select-wrapper:focus-within > .popover-header-catalog {
+  display: flex;
+}
+
 .product-catalog-select {
   position: relative;
 
