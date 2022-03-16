@@ -959,10 +959,6 @@ body {
   color: #ffe17f;
 }
 
-.term-button.current::before {
-  background-color: #000000;
-}
-
 .term-button.button-yellow-line:hover {
   color: rgba(255, 225, 127, 0.5);
 }
@@ -984,12 +980,36 @@ body {
   background-color: #000000;
 }
 
+.term-item.current .term-button {
+  color: #ffe17f;
+
+  background-color: #000000;
+}
+
+.term-item.current .term-button::before {
+  background-color: #000000;
+}
+
 .term-item:not(:last-child) {
   margin-bottom: 35px;
 }
 
 .term-description-list {
   padding: 72px 0 64px 116px;
+}
+
+.term-item:hover {
+  background-color: #000000;
+}
+
+.term-item:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.term-button:focus {
+  outline: none;
 }
 
 .term-header {
