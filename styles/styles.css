@@ -101,10 +101,6 @@ body {
 }
 
 /* Начало шапки страницы */
-.body-white-wrapper {
-
-}
-
 .page-header {
   margin: 0 auto;
 }
@@ -258,10 +254,6 @@ body {
   margin: auto 13px auto 0;
 
   background: url("../images/header/user.svg") no-repeat;
-}
-
-.header-button-icon {
-
 }
 
 .logout-link {
@@ -506,24 +498,6 @@ body {
 .popover-header-catalog > ul > li > a:visited {
   color: #000000;
 }
-
-.smart-watches-list {
-}
-
-.smart-watches-item {
-}
-
-.smart-watches-link {
-}
-
-.drons-list {
-}
-
-.drons-item {
-}
-
-.drons-link {
-}
 /* Конец шапки страницы */
 
 /* Начало подвала страницы */
@@ -558,9 +532,6 @@ body {
   background: #ffc700;
 }
 
-.footer-direction {
-}
-
 .footer-navigation {
   margin-right: auto;
   margin-left: 112px;
@@ -570,10 +541,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-.footer-navigation-item {
-}
-
 
 .footer-navigation-item:not(:last-child) {
   margin-right: 35px;
@@ -1025,9 +992,6 @@ body {
   padding: 72px 0 64px 116px;
 }
 
-.term-delievery-item {
-}
-
 .term-header {
   margin-bottom: 34px;
 
@@ -1316,6 +1280,10 @@ body {
   border-bottom: 3px #c4c4c4 solid;
 }
 
+.subscribe-email:invalid {
+  outline-color: #ff3d3d;
+}
+
 .subscribe-email::placeholder {
   font: inherit;
   font-size: 18px;
@@ -1363,9 +1331,6 @@ body {
 /* Конец главного содержимого главной страницы */
 
 /* Начало главного содержимого страницы Каталог */
-.main-catalog {
-}
-
 .catalog-header {
   padding: 35px 200px;
 
@@ -1436,9 +1401,6 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-.catalog-filter {
 }
 
 .catalog-filter-group {
@@ -1546,10 +1508,12 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  appearance: none;
   appearance: none;
 
   margin: 0;
@@ -1577,6 +1541,7 @@ body {
 
 .input-appearance {
   position: absolute;
+  appearance: none;
   appearance: none;
 }
 
@@ -1657,6 +1622,7 @@ body {
   background: url("../images/catalog-page/sort.svg") no-repeat right 12px center;
   background-color: inherit;
   appearance: none;
+  appearance: none;
 }
 
 .sorting-mini-wrapper {
@@ -1728,6 +1694,31 @@ body {
   width: 360px;
 }
 
+.product-item.new::before {
+  content: "new";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
 .product-item:hover > .product-img,
 .product-item:hover > .name-and-price-wrapper {
   opacity: 0.6;
@@ -1780,9 +1771,6 @@ body {
 .product-img {
   display: block;
   object-fit: contain;
-}
-
-.product-title {
 }
 
 .product-price {
@@ -1849,12 +1837,6 @@ body {
   letter-spacing: 0.2em;
 }
 
-.pagination-item {
-}
-
-.pagination-prev {
-}
-
 .pagination-prev-next:hover {
   background-color: #dcdcdc;
 }
@@ -1881,12 +1863,6 @@ body {
 
 .pagination-link:active {
   opacity: 1;
-}
-
-.pagination-current {
-}
-
-.pagination-next {
 }
 /* Конец главного содержимого страницы Каталог */
 
@@ -1981,6 +1957,10 @@ body {
   position: relative;
 }
 
+.input-wrapper-email .modal-input:invalid {
+  border: 2px solid #ff3d3d;
+}
+
 .input-wrapper-name::after,
 .input-wrapper-email::after {
   content: "";
@@ -2024,6 +2004,7 @@ body {
 }
 
 .input-error {
+  /* display: none; */
   margin: 0;
 
   font-family: "Rubik", sans-serif;
@@ -2038,10 +2019,6 @@ body {
   width: 200px;
 
   background-color: inherit;
-}
-
-.error-border {
-  border-color: #ff3d3d;
 }
 
 .modal-number-wrapper {
@@ -2113,12 +2090,14 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+  appearance: textfield;
 
   cursor: pointer;
 }
 
 .modal-number::-webkit-outer-spin-button,
 .modal-number::-webkit-inner-spin-button {
+  appearance: none;
   appearance: none;
 
   margin: 0;
@@ -2233,9 +2212,6 @@ body {
   color: #ffffff;
 
   background-color: #000000;
-}
-
-.popover-cart-list {
 }
 
 .popover-cart-item {
