@@ -414,7 +414,21 @@ body {
 }
 
 .header-navigation-item {
+  position: relative;
   margin-left: 45px;
+}
+
+.header-navigation-item:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background: #000000;
 }
 
 .header-navigation-item:first-child {
@@ -428,8 +442,7 @@ body {
   top: 35px;
   left: -60px;
 
-  /* display: none; */
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 1070px;
   padding: 33px 30px 40px 60px;
@@ -457,9 +470,34 @@ body {
   margin-bottom: 20px;
 }
 
+.popover-header-catalog > ul > li:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.popover-header-catalog > ul > li > a:focus {
+  outline: none;
+}
+
 .popover-header-catalog > ul > li > a {
+  position: relative;
+
   color: #000000;
   text-decoration: none;
+}
+
+.popover-header-catalog > ul > li > a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background: #000000;
 }
 
 .popover-header-catalog > ul > li > a:visited {
