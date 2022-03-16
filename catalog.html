@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" size="32x32" href="images/favico.png">
 </head>
 
 <body>
@@ -94,27 +95,27 @@
 
             <div class="popover-header-catalog">
               <ul class="video-gadgets-list reset-list">
-                <li class="video-gadgets-item">
-                  <a href="#" class="video-gadgets-link focus">Виртуальная реальность</a>
+                <li class="video-gadgets-item hover-06 active-03">
+                  <a href="#" class="video-gadgets-link ">Виртуальная реальность</a>
                 </li>
-                <li class="video-gadgets-item">
-                  <a href="#" class="video-gadgets-link focus">Моноподы для селфи</a>
+                <li class="video-gadgets-item hover-06 active-03">
+                  <a href="#" class="video-gadgets-link ">Моноподы для селфи</a>
                 </li>
-                <li class="video-gadgets-item">
-                  <a href="#" class="video-gadgets-link focus">Экшн-камеры</a>
+                <li class="video-gadgets-item hover-06 active-03">
+                  <a href="#" class="video-gadgets-link ">Экшн-камеры</a>
                 </li>
               </ul>
               <ul class="smart-watches-list reset-list">
-                <li class="smart-watches-item">
-                  <a href="#" class="smart-watches-link focus">Фитнесс-браслеты</a>
+                <li class="smart-watches-item hover-06 active-03">
+                  <a href="#" class="smart-watches-link ">Фитнесс-браслеты</a>
                 </li>
-                <li class="smart-watches-item">
-                  <a href="#" class="smart-watches-link focus">Умные часы</a>
+                <li class="smart-watches-item hover-06 active-03">
+                  <a href="#" class="smart-watches-link ">Умные часы</a>
                 </li>
               </ul>
               <ul class="drons-list reset-list">
-                <li class="drons-item">
-                  <a href="#" class="drons-link focus">Квадрокоптеры</a>
+                <li class="drons-item hover-06 active-03">
+                  <a href="#" class="drons-link ">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
@@ -177,10 +178,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 119px">
-                    <button class="range-toggle toggle-min">
+                    <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -299,6 +300,7 @@
         </div>
 
         <!-- Карточки товаров Начало -->
+        <!-- для добавления плашки нового товара необходимо добавить элементу списка класс new -->
         <section class="product-list-section">
           <ul class="product-list reset-list">
             <li class="product-item ">
@@ -314,7 +316,7 @@
               <a href="#" class="button-yellow-line ">Подробнее</a>
             </li>
 
-            <li class="product-item ">
+            <li class="product-item new">
               <img src="images/catalog-page/products/product(2).jpg" width="360" height="380" alt="Фото товара"
                 class="product-img reset-margin">
               <div class="name-and-price-wrapper">
