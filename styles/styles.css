@@ -1008,6 +1008,14 @@ body {
   opacity: 1;
 }
 
+.term-item:hover .term-button {
+  color: #ffe17f;
+}
+
+.term-item:hover .term-button::before {
+  background-color: #000000;
+}
+
 .term-button:focus {
   outline: none;
 }
