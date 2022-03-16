@@ -428,19 +428,24 @@ body {
   top: 35px;
   left: -60px;
 
-  display: none;
+  /* display: none; */
+  display: flex;
   flex-wrap: wrap;
   width: 1070px;
-  padding: 33px 30px 60px 60px;
+  padding: 33px 30px 40px 60px;
 
   background-color: #ffe17f;
+}
+
+.popover-header-catalog:hover {
+  display: flex;
 }
 
 .product-catalog-select:hover ~ .popover-header-catalog {
   display: flex;
 }
 
-.product-catalog-select-wrapper:focus-within ~ .popover-header-catalog {
+.product-catalog-select:focus-within ~ .popover-header-catalog {
   display: flex;
 }
 
@@ -448,7 +453,8 @@ body {
   margin-right: 30px;
 }
 
-.video-gadgets-item {
+.popover-header-catalog > ul > li {
+  margin-bottom: 20px;
 }
 
 .popover-header-catalog > ul > li > a {
