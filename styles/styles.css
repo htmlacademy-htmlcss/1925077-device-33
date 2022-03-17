@@ -2251,6 +2251,7 @@ body {
 }
 
 .popover-cart-item {
+  display: flex;
   padding: 20px;
 }
 
@@ -2258,7 +2259,7 @@ body {
   display: flex;
   align-items: flex-start;
   min-height: 43px;
-
+  color: #ffffff;
   text-decoration: none;
 }
 
