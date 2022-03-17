@@ -424,14 +424,14 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-row-flex">
             <div>
-              <div class="modal-label">Ваше имя:</div>
+              <label for="modal-name" class="modal-label">Ваше имя:</label>
               <div class="input-wrapper-name">
                 <input class="modal-input focus" type="text" id="modal-name" name="modal-name"
                   placeholder="Введите имя">
               </div>
             </div>
             <div>
-              <div class="modal-label">Ваш e-mail:</div>
+              <label for="modal-email" class="modal-label">Ваш e-mail:</label>
 
               <div class="input-wrapper-email">
                 <input class="modal-input  focus" type="email" id="modal-email" name="modal-email"
@@ -444,13 +444,13 @@
 
           <div class="modal-row-flex second">
             <div class="modal-unit">
-              <div class="modal-label">Что нужно привезти:</div>
+              <label class="modal-label">Что нужно привезти:</label>
               <input class="modal-input focus" type="text" id="modal-request" name="modal-request"
                 placeholder="В свободной форме">
             </div>
 
             <div>
-              <div class="modal-label">Количество:
+              <div class="modal-label"><label for="modal-number-input">Количество:</label>
                 <button class="info-tooltip-button button" type="button">
                   <span class="visually-hidden">Иформация о количестве доставляемого товара.</span>
                   <span class="modal-tooltip-text display-none-selector">
@@ -462,7 +462,7 @@
                 <button class="modal-minus-button button focus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
-                <input type="number" class="modal-number focus" min="0" value="1">
+                <input type="number" id="modal-number-input" class="modal-number focus" min="0" value="1">
                 <button class="modal-plus-button button focus" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                 </button>
